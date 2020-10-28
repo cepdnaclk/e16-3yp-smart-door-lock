@@ -4,8 +4,8 @@ A project of third year students developing a smart door lock for the entrance.
 ## Group Members
 
 - Virajani Dharmathilaka   - E/16/086 - e16086@eng.pdn.ac.lk
-- Tharushini Jayathilaka   - E/16/156 - e16086@eng.pdn.ac.lk
-- Chanika Madushanki       - E/16/223 - e16086@eng.pdn.ac.lk
+- Tharushini Jayathilaka   - E/16/156 - e16156@eng.pdn.ac.lk
+- Chanika Madushanki       - E/16/223 - e16223@eng.pdn.ac.lk
 
 ## Problem at Entrance
 
