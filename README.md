@@ -1,7 +1,7 @@
 # e16-3yp-smart-door-lock
 A project of third year students developing a smart door lock for the entrance.
 
-##Group Members
+## Group Members 
 
 - Virajani Dharmathilaka   - E/16/086 - e16086@eng.pdn.ac.lk
 - Tharushini Jayathilaka   - E/16/156 - e16086@eng.pdn.ac.lk
