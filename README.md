@@ -27,6 +27,7 @@ In addition to this following features will be included in the door lock.
  
  Data from the face recognition system, Finger print detection and RFID cards will be sent directly to a web server and the details of the user will be upddated while sending them to the information display.
  
+ 
  ## Advising Lecturers
  
 - Dr. Isuru Nawinne
