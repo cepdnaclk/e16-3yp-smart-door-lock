@@ -9,8 +9,6 @@ A project of third year students developing a smart door lock for the entrance.
 
 ## Problems at Entrance
 
-![problem picture](https://github.com/cepdnaclk/e16-3yp-smart-door-lock/blob/main/Images/entrance.jpg)
-
 People who use doors for the entrances face different types of problems when entering. The security level, accuracy and efficiency of the current lock system at the entrance are some major causes for the user problems. 
 
 Therefore by this project we are developing a smart door lock including the following main features.
