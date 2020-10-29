@@ -37,3 +37,7 @@ In addition to them following features will be included in the smart door lock.
 * [University of Peradeniya](https://www.pdn.ac.lk/)
 * [Faculty of Engineering, University of Peradeniya](https://eng.pdn.ac.lk/) 
 * [Department of Computer Engineering, Faculty of Engineering, University of Peradeniya](http://www.ce.pdn.ac.lk/) 
+
+* [Access our github repository](https://github.com/cepdnaclk/e16-3yp-smart-door-lock/) 
+
+
