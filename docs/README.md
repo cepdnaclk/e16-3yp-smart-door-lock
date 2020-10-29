@@ -28,12 +28,12 @@ In addition to them following features will be included in the smart door lock.
  Data from the face recognition system, Finger print detection and RFID cards will be sent directly to a web server and the details of the user will be updated while sending them to the information display.
  
  
- ## Advising Lecturers
+## Advising Lecturers
  
 - Dr. Isuru Nawinne
 - Dr. Ziyan Maraikar
  
- ## Links
+## Links
 * [University of Peradeniya](https://www.pdn.ac.lk/)
 * [Faculty of Engineering, University of Peradeniya](https://eng.pdn.ac.lk/) 
 * [Department of Computer Engineering, Faculty of Engineering, University of Peradeniya](http://www.ce.pdn.ac.lk/) 
