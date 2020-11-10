@@ -40,4 +40,4 @@ Details and the uses of the used hardware components
 
 ![Display](https://github.com/cepdnaclk/e16-3yp-smart-door-lock/blob/main/Images/display.png)
 
-##6.IR Sensors
+## 6.IR Sensors
