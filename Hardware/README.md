@@ -3,7 +3,7 @@ Details and the uses of the used hardware components
 
 ## 1.Raspberry Pi -3
 
-![Raspberry pi -3](https://github.com/cepdnaclk/e16-3yp-smart-door-lock/blob/main/Images/entrance.jpg)
+![Raspberry pi -3](https://github.com/cepdnaclk/e16-3yp-smart-door-lock/blob/main/Images/Raspberry%20pi.jfif)
 
 -Storage: MicroSD card or via USB-attached storage​
 -Wireless: 802.11n Wireless LAN ​
