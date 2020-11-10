@@ -34,7 +34,7 @@ Details and the uses of the used hardware components
 
 ## 4.Solenoid door lock
 
-![door lock]Raspberry pi -3](https://github.com/cepdnaclk/e16-3yp-smart-door-lock/blob/main/Images/lock.png)
+![door lock](https://github.com/cepdnaclk/e16-3yp-smart-door-lock/blob/main/Images/lock.png)
 
 ## 5.16x2 LCD display
 
