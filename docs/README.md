@@ -28,6 +28,10 @@ In addition to them following features will be included in the smart door lock.
 - Information display of the current user
 - Allowing only one person to enter at a time
 
+## Circuit
+
+![circuit diagram](https://github.com/cepdnaclk/e16-3yp-smart-door-lock/blob/main/docs/images/Full%20Circuit.png)
+
 # Hardware Components
 Details and the uses of the used hardware components
 
