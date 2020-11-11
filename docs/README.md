@@ -14,6 +14,15 @@ A project of third year students developing a smart door lock for the entrance.
 * [Faculty of Engineering, University of Peradeniya](https://eng.pdn.ac.lk/) 
 * [Department of Computer Engineering, Faculty of Engineering, University of Peradeniya](http://www.ce.pdn.ac.lk/) 
 
+## Table of Contents
+ 1. >[Introduction](https://github.com/cepdnaclk/e16-3yp-smart-door-lock#Introduction)
+ 2. >[Solution Architecture](https://github.com/cepdnaclk/e16-3yp-smart-door-lock#SolutionArchitecture)
+ 3. >[Hardware Components](https://github.com/cepdnaclk/e16-3yp-smart-door-lock#HardwareComponents)
+ 4. >[Data Flow](https://github.com/cepdnaclk/e16-3yp-smart-door-lock#DataFlow)
+ 5. >[Detailed budget](https://github.com/cepdnaclk/e16-3yp-smart-door-lock#Detailedbudget)
+ 6. >[Access to github repository](https://github.com/cepdnaclk/e16-3yp-smart-door-lock#Accesstogithubrepository)
+ 
+ 
 # Introduction
 
 ## Problems at Entrance
@@ -94,7 +103,9 @@ Details and the uses of the used hardware components
 
 ![Budget](https://raw.githubusercontent.com/cepdnaclk/e16-3yp-smart-door-lock/main/Images/budget.png)
 
-* [Access our github repository](https://github.com/cepdnaclk/e16-3yp-smart-door-lock/) 
+## Access to github repository
+
+* [Click here](https://github.com/cepdnaclk/e16-3yp-smart-door-lock/) 
 
 ## Advising Lecturers
  
