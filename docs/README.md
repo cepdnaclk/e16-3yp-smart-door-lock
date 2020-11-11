@@ -98,7 +98,8 @@ Details and the uses of the used hardware components
      - To monitor database
      - To add/update/delete personal data through web application
      - To view all personal details and and their access time
-  Only these persons can login to the web applcation.For the authentication purpose we have added 2 factor authentication.
+     
+ Only these persons can login to the web applcation.For the authentication purpose we have added 2 factor authentication.
   
       - By using email and password 
       - Send OTP to predeteremined mobile phone number.
