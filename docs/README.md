@@ -27,16 +27,54 @@ In addition to them following features will be included in the smart door lock.
 - Unlock record of the current user at the door
 - Information display of the current user
 - Allowing only one person to enter at a time
-- Web Application to control access
-- No access at night
+
+# Hardware Components
+Details and the uses of the used hardware components
+
+## 1.Raspberry Pi -3
+
+![Raspberry pi -3](https://github.com/cepdnaclk/e16-3yp-smart-door-lock/blob/main/Images/Raspberry%20pi.jfif)
+
+- Storage: MicroSD card or via USB-attached storage​
+- Wireless: 802.11n Wireless LAN ​
+  (Peak transmit/receive throughput of 150Mbps)​
+- Camera interface (CSI)​
+- Display interface (DSI)​
+- Memory: 1GB LPDDR2-900 SDRAM​
+- 750mA​
+
+## 2.RFID Sensor 
+
+![RFID](https://github.com/cepdnaclk/e16-3yp-smart-door-lock/blob/main/Images/RFID%20sensor.png)
+
+- Fast identification
+- low power
+- low cost
+- pretty rugged
+
+## 3.Fingerprint Sensor
+
+![Fingerprint sensor](https://github.com/cepdnaclk/e16-3yp-smart-door-lock/blob/main/Images/Fingerprint.png)
+
+- Durable over an individual's lifetime 
+- Difficult to alter
+- 3.8V – 7V
+- 65mA
+- 20 oC to 60 oC
+
+## 4.Solenoid door lock
+
+## 5.16x2 LCD display
+
+![Display](https://github.com/cepdnaclk/e16-3yp-smart-door-lock/blob/main/Images/display.png)
+
+## 6.IR Sensors
+
 
 ## Data Flow
  
  Data from the face recognition system, Finger print detection and RFID cards will be sent directly to a web server and the details of the user will be updated while sending them to the information display.
  
-## Circuit 
-
-![circuit diagram](https://github.com/cepdnaclk/e16-3yp-smart-door-lock/blob/main/Images/Full%20Circuit.png)
  
 ## Advising Lecturers
  
