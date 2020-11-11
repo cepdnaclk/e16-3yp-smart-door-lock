@@ -95,14 +95,14 @@ Details and the uses of the used hardware components
 ## Web application
   Web appliaction is designed to control access to the system. In our web application there are three types of administrator roles.They are,
 
-     - To monitor database
-     - To add/update/delete personal data through web application
-     - To view all personal details and and their access time
+  - To monitor database
+  - To add/update/delete personal data through web application
+  - To view all personal details and and their access time
      
  Only these persons can login to the web applcation.For the authentication purpose we have added 2 factor authentication.
   
-      - By using email and password 
-      - Send OTP to predeteremined mobile phone number.
+  - By using email and password 
+  - Send OTP to predeteremined mobile phone number.
       
    * [Vist our UI designs](https://github.com/cepdnaclk/e16-3yp-smart-door-lock/blob/main/UI%20diagrams/UI%20digrams.pdf)  
   
