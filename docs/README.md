@@ -7,7 +7,14 @@ A project of third year students developing a smart door lock for the entrance.
 - Tharushini Jayathilaka   - E/16/156 - e16156@eng.pdn.ac.lk
 - Chanika Madushanki       - E/16/223 - e16223@eng.pdn.ac.lk
 
-* [Access our github repository](https://github.com/cepdnaclk/e16-3yp-smart-door-lock/) 
+
+
+## Links
+* [University of Peradeniya](https://www.pdn.ac.lk/)
+* [Faculty of Engineering, University of Peradeniya](https://eng.pdn.ac.lk/) 
+* [Department of Computer Engineering, Faculty of Engineering, University of Peradeniya](http://www.ce.pdn.ac.lk/) 
+
+# Introduction
 
 ## Problems at Entrance
 
@@ -29,12 +36,14 @@ In addition to them following features will be included in the smart door lock.
 - Allowing only one person to enter at a time
 - Web Application to control access
 - No access at night
+# Solution Architecture
 
-## Circuit
+## Circuit Diagram
 
 ![circuit diagram](https://raw.githubusercontent.com/cepdnaclk/e16-3yp-smart-door-lock/main/Images/Full%20Circuit.png)
 
 # Hardware Components
+
 Details and the uses of the used hardware components
 
 ## 1.Raspberry Pi -3
@@ -81,16 +90,18 @@ Details and the uses of the used hardware components
  
  Data from the face recognition system, Finger print detection and RFID cards will be sent directly to a web server and the details of the user will be updated while sending them to the information display.
  
- 
+## Detailed budget
+
+![Budget](https://github.com/cepdnaclk/e16-3yp-smart-door-lock/blob/main/Images/budget.png)
+
+* [Access our github repository](https://github.com/cepdnaclk/e16-3yp-smart-door-lock/) 
+
 ## Advising Lecturers
  
 - Dr. Isuru Nawinne
 - Dr. Ziyan Maraikar
  
-## Links
-* [University of Peradeniya](https://www.pdn.ac.lk/)
-* [Faculty of Engineering, University of Peradeniya](https://eng.pdn.ac.lk/) 
-* [Department of Computer Engineering, Faculty of Engineering, University of Peradeniya](http://www.ce.pdn.ac.lk/) 
+
 
 
 
