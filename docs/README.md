@@ -16,11 +16,11 @@ A project of third year students developing a smart door lock for the entrance.
 
 ## Table of Contents
  1. >[Introduction](https://github.com/cepdnaclk/e16-3yp-smart-door-lock#Introduction)
- 2. >[Solution Architecture](https://github.com/cepdnaclk/e16-3yp-smart-door-lock#SolutionArchitecture)
- 3. >[Hardware Components](https://github.com/cepdnaclk/e16-3yp-smart-door-lock#HardwareComponents)
- 4. >[Data Flow](https://github.com/cepdnaclk/e16-3yp-smart-door-lock#DataFlow)
- 5. >[Detailed budget](https://github.com/cepdnaclk/e16-3yp-smart-door-lock#Detailedbudget)
- 6. >[Access to github repository](https://github.com/cepdnaclk/e16-3yp-smart-door-lock#Accesstogithubrepository)
+ 2. >[Solution Architecture](https://github.com/cepdnaclk/e16-3yp-smart-door-lock#Solution-Architecture)
+ 3. >[Hardware Components](https://github.com/cepdnaclk/e16-3yp-smart-door-lock#Hardware-Components)
+ 4. >[Data Flow](https://github.com/cepdnaclk/e16-3yp-smart-door-lock#Data-Flow)
+ 5. >[Detailed budget](https://github.com/cepdnaclk/e16-3yp-smart-door-lock#Detailed-budget)
+ 6. >[Access to github repository](https://github.com/cepdnaclk/e16-3yp-smart-door-lock#Access-to-github-repository)
  
  
 # Introduction
