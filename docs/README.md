@@ -92,7 +92,7 @@ Details and the uses of the used hardware components
  
 ## Detailed budget
 
-![Budget](https://github.com/cepdnaclk/e16-3yp-smart-door-lock/blob/main/Images/budget.png)
+![Budget](https://raw.githubusercontent.com/cepdnaclk/e16-3yp-smart-door-lock/main/Images/budget.png)
 
 * [Access our github repository](https://github.com/cepdnaclk/e16-3yp-smart-door-lock/) 
 
