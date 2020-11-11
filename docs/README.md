@@ -34,7 +34,7 @@ In addition to them following features will be included in the smart door lock.
  
 ## Circuit 
 
-![circuit diagram](https://github.com/cepdnaclk/e16-3yp-smart-door-lock/blob/main/Images/entrance.jpg)
+![circuit diagram](https://github.com/cepdnaclk/e16-3yp-smart-door-lock/blob/main/Images/Full%20Circuit.png)
  
 ## Advising Lecturers
  
