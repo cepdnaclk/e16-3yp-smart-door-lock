@@ -30,14 +30,14 @@ In addition to them following features will be included in the smart door lock.
 
 ## Circuit
 
-![circuit diagram](https://github.com/cepdnaclk/e16-3yp-smart-door-lock/blob/main/Images/Full%20Circuit.png)
+![circuit diagram](https://raw.githubusercontent.com/cepdnaclk/e16-3yp-smart-door-lock/main/Images/Full%20Circuit.png)
 
 # Hardware Components
 Details and the uses of the used hardware components
 
 ## 1.Raspberry Pi -3
 
-![Raspberry pi -3](https://github.com/cepdnaclk/e16-3yp-smart-door-lock/blob/main/Images/Raspberry%20pi.jfif)
+![Raspberry pi -3](https://raw.githubusercontent.com/cepdnaclk/e16-3yp-smart-door-lock/main/Images/Raspberry%20pi.jfif)
 
 - Storage: MicroSD card or via USB-attached storage​
 - Wireless: 802.11n Wireless LAN ​
@@ -49,7 +49,7 @@ Details and the uses of the used hardware components
 
 ## 2.RFID Sensor 
 
-![RFID](https://github.com/cepdnaclk/e16-3yp-smart-door-lock/blob/main/Images/RFID%20sensor.png)
+![RFID](https://raw.githubusercontent.com/cepdnaclk/e16-3yp-smart-door-lock/main/Images/RFID%20sensor.png)
 
 - Fast identification
 - low power
@@ -58,7 +58,7 @@ Details and the uses of the used hardware components
 
 ## 3.Fingerprint Sensor
 
-![Fingerprint sensor](https://github.com/cepdnaclk/e16-3yp-smart-door-lock/blob/main/Images/Fingerprint.png)
+![Fingerprint sensor](https://raw.githubusercontent.com/cepdnaclk/e16-3yp-smart-door-lock/main/Images/Fingerprint.png)
 
 - Durable over an individual's lifetime 
 - Difficult to alter
@@ -70,7 +70,7 @@ Details and the uses of the used hardware components
 
 ## 5.16x2 LCD display
 
-![Display](https://github.com/cepdnaclk/e16-3yp-smart-door-lock/blob/main/Images/display.png)
+![Display](https://raw.githubusercontent.com/cepdnaclk/e16-3yp-smart-door-lock/main/Images/display.png)
 
 ## 6.IR Sensors
 
