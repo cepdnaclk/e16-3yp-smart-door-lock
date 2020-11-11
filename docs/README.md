@@ -32,6 +32,9 @@ In addition to them following features will be included in the smart door lock.
  
  Data from the face recognition system, Finger print detection and RFID cards will be sent directly to a web server and the details of the user will be updated while sending them to the information display.
  
+## Circuit 
+
+![circuit diagram](https://github.com/cepdnaclk/e16-3yp-smart-door-lock/blob/main/Images/entrance.jpg)
  
 ## Advising Lecturers
  
