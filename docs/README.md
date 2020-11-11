@@ -14,15 +14,6 @@ A project of third year students developing a smart door lock for the entrance.
 * [Faculty of Engineering, University of Peradeniya](https://eng.pdn.ac.lk/) 
 * [Department of Computer Engineering, Faculty of Engineering, University of Peradeniya](http://www.ce.pdn.ac.lk/) 
 
-## Table of Contents
- 1. >[Introduction](https://github.com/cepdnaclk/e16-3yp-smart-door-lock#Introduction)
- 2. >[Solution Architecture](https://github.com/cepdnaclk/e16-3yp-smart-door-lock#Solution-Architecture)
- 3. >[Hardware Components](https://github.com/cepdnaclk/e16-3yp-smart-door-lock#Hardware-Components)
- 4. >[Data Flow](https://github.com/cepdnaclk/e16-3yp-smart-door-lock#Data-Flow)
- 5. >[Detailed budget](https://github.com/cepdnaclk/e16-3yp-smart-door-lock#Detailed-budget)
- 6. >[Access to github repository](https://github.com/cepdnaclk/e16-3yp-smart-door-lock#Access-to-github-repository)
- 
- 
 # Introduction
 
 ## Problems at Entrance
@@ -98,14 +89,30 @@ Details and the uses of the used hardware components
 ## Data Flow
  
  Data from the face recognition system, Finger print detection and RFID cards will be sent directly to a web server and the details of the user will be updated while sending them to the information display.
+
+# Software
+
+## Web application
+  Web appliaction is designed to control access to the system. In our web application there are three types of administrator roles.They are,
+
+     - To monitor database
+     - To add/update/delete personal data through web application
+     - To view all personal details and and their access time
+  Only these persons can login to the web applcation.For the authentication purpose we have added 2 factor authentication.
+  
+      - By using email and password 
+      - Send OTP to predeteremined mobile phone number.
+      
+   * [Vist our UI designs](https://github.com/cepdnaclk/e16-3yp-smart-door-lock/blob/main/UI%20diagrams/UI%20digrams.pdf)  
+  
+  
+
  
 ## Detailed budget
 
 ![Budget](https://raw.githubusercontent.com/cepdnaclk/e16-3yp-smart-door-lock/main/Images/budget.png)
 
-## Access to github repository
-
-* [Click here](https://github.com/cepdnaclk/e16-3yp-smart-door-lock/) 
+* [Access our github repository](https://github.com/cepdnaclk/e16-3yp-smart-door-lock/) 
 
 ## Advising Lecturers
  
