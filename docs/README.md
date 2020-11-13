@@ -14,6 +14,24 @@ A project of third year students developing a smart door lock for the entrance.
 * [Faculty of Engineering, University of Peradeniya](https://eng.pdn.ac.lk/) 
 * [Department of Computer Engineering, Faculty of Engineering, University of Peradeniya](http://www.ce.pdn.ac.lk/) 
 
+## Structure of the product
+
+![2D model](https://raw.githubusercontent.com/cepdnaclk/e16-3yp-smart-door-lock/main/Images/sketchOfTheProduct.png)
+
+## Table of Content
+
+- [Introduction](#Introduction)
+- [Solution Architecture](#Solution-Architecture)
+    - [High Level Architecture of the product](#High-Level-Architecture-of-the-product)
+    - [Circuit Diagram](#Circuit-Diagram)
+    - [ Data Flow](#Data-Flow)
+- [Software](#Software)
+    - [Web application](#Web-application)
+    - [UI design](#UI-design)
+- [Detailed budget](#Detailed-budget)
+- [Advising Lecturers](#Advising-Lecturers)
+    
+
 # Introduction
 
 ## Problems at Entrance
@@ -43,9 +61,7 @@ In addition to them following features will be included in the smart door lock.
 
 ![HighLevelArchitechture](https://raw.githubusercontent.com/cepdnaclk/e16-3yp-smart-door-lock/main/Images/HighLevelArchitechture.png)
 
-## Structure of the product
 
-![2D model](https://raw.githubusercontent.com/cepdnaclk/e16-3yp-smart-door-lock/main/Images/sketchOfTheProduct.png)
 
 
 ## Circuit Diagram
