@@ -107,7 +107,8 @@ Details and the uses of the used hardware components
       - By using email and password 
       - Send OTP to predeteremined mobile phone number.
   
-  ## UI design
+  
+## UI design
    ![UI Designs1](https://raw.githubusercontent.com/cepdnaclk/e16-3yp-smart-door-lock/main/Images/UIdesign1.png)
    ![UI Designs2](https://raw.githubusercontent.com/cepdnaclk/e16-3yp-smart-door-lock/main/Images/UIdesign2.png)
   
