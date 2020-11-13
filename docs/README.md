@@ -18,7 +18,6 @@ A project of third year students developing a smart door lock for the entrance.
 
 ## Problems at Entrance
 
-
 ![problem picture](https://raw.githubusercontent.com/cepdnaclk/e16-3yp-smart-door-lock/main/Images/entrance.jpg)
 
 People who use doors for the entrances face different types of problems when entering. The security level, accuracy and efficiency of the current lock system at the entrance are some major causes for the user problems. 
@@ -36,54 +35,23 @@ In addition to them following features will be included in the smart door lock.
 - Allowing only one person to enter at a time
 - Web Application to control access
 - Access at night only for specified persons
+
+
 # Solution Architecture
+
+## High Level Architecture of the product
+
+![HighLevelArchitechture](https://raw.githubusercontent.com/cepdnaclk/e16-3yp-smart-door-lock/main/Images/HighLevelArchitechture.png)
+
+## Structure of the product
+
+![2D model](https://raw.githubusercontent.com/cepdnaclk/e16-3yp-smart-door-lock/main/Images/sketchOfTheProduct.png)
+
 
 ## Circuit Diagram
 
 ![circuit diagram](https://raw.githubusercontent.com/cepdnaclk/e16-3yp-smart-door-lock/main/Images/Full%20Circuit.png)
 
-# Hardware Components
-
-Details and the uses of the used hardware components
-
-## 1.Raspberry Pi -3
-
-![Raspberry pi -3](https://raw.githubusercontent.com/cepdnaclk/e16-3yp-smart-door-lock/main/Images/Raspberry%20pi.jfif)
-
-- Storage: MicroSD card or via USB-attached storage​
-- Wireless: 802.11n Wireless LAN ​
-  (Peak transmit/receive throughput of 150Mbps)​
-- Camera interface (CSI)​
-- Display interface (DSI)​
-- Memory: 1GB LPDDR2-900 SDRAM​
-- 750mA​
-
-## 2.RFID Sensor 
-
-![RFID](https://raw.githubusercontent.com/cepdnaclk/e16-3yp-smart-door-lock/main/Images/RFID%20sensor.png)
-
-- Fast identification
-- low power
-- low cost
-- pretty rugged
-
-## 3.Fingerprint Sensor
-
-![Fingerprint sensor](https://raw.githubusercontent.com/cepdnaclk/e16-3yp-smart-door-lock/main/Images/Fingerprint.png)
-
-- Durable over an individual's lifetime 
-- Difficult to alter
-- 3.8V – 7V
-- 65mA
-- 20 oC to 60 oC
-
-## 4.Solenoid door lock
-
-## 5.16x2 LCD display
-
-![Display](https://raw.githubusercontent.com/cepdnaclk/e16-3yp-smart-door-lock/main/Images/display.png)
-
-## 6.IR Sensors
 
 
 ## Data Flow
@@ -118,7 +86,7 @@ Details and the uses of the used hardware components
   
 
  
-## Detailed budget
+# Detailed budget
 
 ![Budget](https://raw.githubusercontent.com/cepdnaclk/e16-3yp-smart-door-lock/main/Images/budget.png)
 
