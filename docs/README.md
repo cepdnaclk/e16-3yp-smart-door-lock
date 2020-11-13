@@ -102,7 +102,8 @@ Details and the uses of the used hardware components
      - To add/update/delete personal data through web application
      - To view all personal details and and their access time
      
- Only these persons can login to the web applcation.For the authentication purpose we have added 2 factor authentication.
+ Speciality of this roles is that, each of these administrators able to handle only the given role. It makes the web application more secure. Moreover, 
+ Only these persons can login to the web applcation. For the authentication purpose we have added 2 factor authentication.
   
       - By using email and password 
       - Send OTP to predeteremined mobile phone number.
@@ -121,7 +122,7 @@ Details and the uses of the used hardware components
 
 ![Budget](https://raw.githubusercontent.com/cepdnaclk/e16-3yp-smart-door-lock/main/Images/budget.png)
 
-* [Access our github repository](https://github.com/cepdnaclk/e16-3yp-smart-door-lock/) 
+* [Visit our github repository](https://github.com/cepdnaclk/e16-3yp-smart-door-lock/) 
 
 ## Advising Lecturers
  
