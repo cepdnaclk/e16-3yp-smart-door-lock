@@ -21,15 +21,15 @@ A project of third year students developing a smart door lock for the entrance.
 ## Table of Content
 
 - [Introduction](https://github.com/cepdnaclk/e16-3yp-smart-door-lock/tree/main/docs#introduction)
-- [Solution Architecture](#Solution-Architecture)
-    - [High Level Architecture of the product](#High-Level-Architecture-of-the-product)
-    - [Circuit Diagram](#Circuit-Diagram)
-    - [ Data Flow](#Data-Flow)
-- [Software](#Software)
-    - [Web application](#Web-application)
-    - [UI design](#UI-design)
-- [Detailed budget](#Detailed-budget)
-- [Advising Lecturers](#Advising-Lecturers)
+- [Solution Architecture](https://github.com/cepdnaclk/e16-3yp-smart-door-lock/tree/main/docs#solution-architecture)
+    - [High Level Architecture of the product](https://github.com/cepdnaclk/e16-3yp-smart-door-lock/tree/main/docs#high-level-architecture-of-the-product)
+    - [Circuit Diagram](https://github.com/cepdnaclk/e16-3yp-smart-door-lock/tree/main/docs#circuit-diagram)
+    - [ Data Flow](https://github.com/cepdnaclk/e16-3yp-smart-door-lock/tree/main/docs#data-flow)
+- [Software](https://github.com/cepdnaclk/e16-3yp-smart-door-lock/tree/main/docs#software)
+    - [Web application](https://github.com/cepdnaclk/e16-3yp-smart-door-lock/tree/main/docs#web-application)
+    - [UI design](https://github.com/cepdnaclk/e16-3yp-smart-door-lock/tree/main/docs#ui-design)
+- [Detailed budget](https://github.com/cepdnaclk/e16-3yp-smart-door-lock/tree/main/docs#detailed-budget)
+- [Advising Lecturers](https://github.com/cepdnaclk/e16-3yp-smart-door-lock/tree/main/docs#advising-lecturers)
     
 
 # Introduction
