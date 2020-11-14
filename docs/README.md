@@ -20,7 +20,7 @@ A project of third year students developing a smart door lock for the entrance.
 
 ## Table of Content
 
-- [Introduction](#Introduction)
+- [Introduction](https://github.com/cepdnaclk/e16-3yp-smart-door-lock/tree/main/docs#introduction)
 - [Solution Architecture](#Solution-Architecture)
     - [High Level Architecture of the product](#High-Level-Architecture-of-the-product)
     - [Circuit Diagram](#Circuit-Diagram)
