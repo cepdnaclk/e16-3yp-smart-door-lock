@@ -1,355 +1,114 @@
-<!DOCTYPE html>
-<html lang="en">
+# e16-3yp-smart-door-lock
+A project of third year students developing a smart door lock for the entrance.
 
-    <!-- Basic -->
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">   
-   
-    <!-- Mobile Metas -->
-    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+## Group Members
+
+- Virajani Dharmathilaka   - E/16/086 - e16086@eng.pdn.ac.lk
+- Tharushini Jayathilaka   - E/16/156 - e16156@eng.pdn.ac.lk
+- Chanika Madushanki       - E/16/223 - e16223@eng.pdn.ac.lk
+
+
+
+## Links
+* [University of Peradeniya](https://www.pdn.ac.lk/)
+* [Faculty of Engineering, University of Peradeniya](https://eng.pdn.ac.lk/) 
+* [Department of Computer Engineering, Faculty of Engineering, University of Peradeniya](http://www.ce.pdn.ac.lk/) 
+
+## Structure of the product
+
+![2D model](https://raw.githubusercontent.com/cepdnaclk/e16-3yp-smart-door-lock/main/Images/sketchOfTheProduct.png)
+
+## Table of Content
+
+- [Introduction](https://github.com/cepdnaclk/e16-3yp-smart-door-lock/tree/main/docs#introduction)
+- [Solution Architecture](https://github.com/cepdnaclk/e16-3yp-smart-door-lock/tree/main/docs#solution-architecture)
+    - [High Level Architecture of the product](https://github.com/cepdnaclk/e16-3yp-smart-door-lock/tree/main/docs#high-level-architecture-of-the-product)
+    - [Circuit Diagram](https://github.com/cepdnaclk/e16-3yp-smart-door-lock/tree/main/docs#circuit-diagram)
+    - [ Data Flow](https://github.com/cepdnaclk/e16-3yp-smart-door-lock/tree/main/docs#data-flow)
+- [Software](https://github.com/cepdnaclk/e16-3yp-smart-door-lock/tree/main/docs#software)
+    - [Web application](https://github.com/cepdnaclk/e16-3yp-smart-door-lock/tree/main/docs#web-application)
+    - [UI design](https://github.com/cepdnaclk/e16-3yp-smart-door-lock/tree/main/docs#ui-design)
+- [Detailed budget](https://github.com/cepdnaclk/e16-3yp-smart-door-lock/tree/main/docs#detailed-budget)
+- [Advising Lecturers](https://github.com/cepdnaclk/e16-3yp-smart-door-lock/tree/main/docs#advising-lecturers)
+    
+
+# Introduction
+
+## Problems at Entrance
+
+![problem picture](https://raw.githubusercontent.com/cepdnaclk/e16-3yp-smart-door-lock/main/Images/entrance.jpg)
+
+People who use doors for the entrances face different types of problems when entering. The security level, accuracy and efficiency of the current lock system at the entrance are some major causes for the user problems. 
+
+Therefore by this project we are developing a smart door lock including the following main features.
+
+- Face Recognition
+- Finger Print detection
+- RFID card reader
+
+In addition to them following features will be included in the smart door lock.
+
+- Unlock record of the current user at the door
+- Information display of the current user
+- Allowing only one person to enter at a time
+- Web Application to control access
+- Access at night only for specified persons
+
+
+# Solution Architecture
+
+## High Level Architecture of the product
+
+![HighLevelArchitechture](https://raw.githubusercontent.com/cepdnaclk/e16-3yp-smart-door-lock/main/Images/HighLevelArchitechture.png)
+
+
+
+
+## Circuit Diagram
+
+![circuit diagram](https://raw.githubusercontent.com/cepdnaclk/e16-3yp-smart-door-lock/main/Images/Full%20Circuit.png)
+
+
+
+## Data Flow
  
-     <!-- Site Metas -->
-    <title>SmartDoorLock - Responsive HTML5 Template</title>  
-    <meta name="keywords" content="">
-    <meta name="description" content="">
-    <meta name="author" content="">
-
-    <!-- Site Icons -->
-    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
-    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
-
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <!-- Site CSS -->
-    <link rel="stylesheet" href="style.css">
-    <!-- Colors CSS -->
-    <link rel="stylesheet" href="css/colors.css">
-    <!-- ALL VERSION CSS -->
-    <link rel="stylesheet" href="css/versions.css">
-    <!-- Responsive CSS -->
-    <link rel="stylesheet" href="css/responsive.css">
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="css/custom.css">
-
-    <!-- Modernizer for Portfolio -->
-    <script src="js/modernizer.js"></script>
-
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
-
-</head>
-<body class="host_version"> 
-
-	<!-- Modal -->
-	<div class="modal fade" id="login" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-	  <div class="modal-dialog" role="document">
-		<div class="modal-content">
-			</div>
-		</div>
-	  </div>
-	</div>
-
-    <!-- LOADER -->
-	<div id="preloader">
-		<div class="loading">
-			<div class="finger finger-1">
-				<div class="finger-item">
-				<span></span><i></i>
-				</div>
-			</div>
-  			<div class="finger finger-2">
-				<div class="finger-item">
-				<span></span><i></i>
-				</div>
-			</div>
-  			<div class="finger finger-3">
-				<div class="finger-item">
-				  <span></span><i></i>
-				</div>
-			</div>
-  			<div class="finger finger-4">
-				<div class="finger-item">
-				<span></span><i></i>
-				</div>
-			</div>
-  			<div class="last-finger">
-				<div class="last-finger-item"><i></i></div>
-			</div>
-		</div>
-	</div>
-	<!-- END LOADER -->
-
-    <header class="header header_style_01">
-        <nav class="megamenu navbar navbar-default">
-            <div class="container">
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-                        <span class="sr-only">Toggle navigation</span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                    <a class="navbar-brand" href="index.html"><img src="images/bg.jpg" alt="image"></a>
-                </div>
-                <div id="navbar" class="navbar-collapse collapse">
-                    <ul class="nav navbar-nav">
-                        <li><a class="active" href="index.html">Home</a></li>
-						<li><a data-scroll href="#overviews" >About</a>
-                        <li><a data-scroll href="#soln" >Hardware Design</a>
-                        <li><a data-scroll href="#software">Software</a></li>
-               
-                        <li><a data-scroll href="#contacts">Contact</a></li>
-                    </ul>
-             
-                </div>
-            </div>
-        </nav>
-    </header>
-	
-	<div id="bootstrap-touch-slider" class="carousel bs-slider fade  control-round indicators-line" data-ride="carousel" data-pause="hover" data-interval="false" >
-		<!-- Indicators -->
-		<div class="carousel-inner" role="listbox">
-			<div class="item active">
-				<div id="home" class="first-section" style="background-image:url('images/front.jpg');">
-					<div class="container">
-						<div class="row">
-							<div class="col-md-12 col-sm-12 text-center">
-								<div class="big-tagline">
-									
-									<h2 data-animation="animated zoomInRight">Smart<strong>Door</strong> Lock</h2>
-									<p class="lead" data-animation="animated fadeInLeft">A project of third year students developing a Smart door lock for the entrance </p>
-									 <a data-scroll href="#overviews" class="btn btn-light btn-radius btn-brd effect-1 slide-btn" data-animation="animated fadeInLeft">All Features</a>
-									&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-									<a data-scroll href="#pricing" class="btn btn-light btn-radius btn-brd effect-1 slide-btn" data-animation="animated fadeInRight">View Plans</a>
-								</div>
-							</div>
-						</div><!-- end row -->            
-					</div><!-- end container -->
-				</div><!-- end section -->
-			</div>
-		
-		</div>
-	</div>
-	
-    <div id="overviews" class="section wb">
-        <div class="container">
-            <div class="col-md-10 col-md-offset-1">
-                <div class="section-title row text-center">
-                    <h3>Problems at the entrance</h3>
-				
-                    <p class="lead">People who use doors for the entrances face different types of problems when entering. The security level, accuracy and efficiency of the current lock system at the entrance are some major causes for the user problems.
-Therefore by this project we are developing a smart door lock including the following main features.</p>
-                
-					    <li class="lead">Face Recognition</li>
-                        <li class="lead">Finger Print detection</li>
-                        <li class="lead">RFID card reader</li>
-						
-			    </div>
-            
-			    <div class="section-title row text-center">
-
-						<p>-In addition to them following features will be included in the smart door lock.</p>
-						<p>- Unlock record of the current user at the door</p>
-						<p>- Information display of the current user</p>
-						<p>- Allowing only one person to enter at a time</p>
-						<p>- Web Application to control access</p>
-						<p>- Access at night only for specified persons</p>
-                    
-                </div><!-- end title -->
-            </div>
-		</div>
-    </div>		
-
-        <div id="soln" class="container">
-            <div class="row">
-                <div class="col-md-10 col-md-offset-1">
-				    <div class="section-title row text-center">
-				    <h3>Solution Architecture</h3>
-					</div>
-				</div>
-				<div class="col-md-6">
-                    <div class="container- right">
-                       
-                        <p class="lead"> The data collected from all the three methods( Face recognition, Finger Print and RFID) are sent to a web server. From there the data is stored in the web application and displayed on the display for the current user.</p>
+ Data from the face recognition system, Finger print detection and RFID cards will be sent directly to a web server and the details of the user will be updated while sending them to the information display.
+ 
+ ![Flow Diagram](https://raw.githubusercontent.com/cepdnaclk/e16-3yp-smart-door-lock/main/Images/flow.png)
 
 
-                    </div><!-- end messagebox -->
-                </div><!-- end col -->
-				
-				<div class="col-md-6">
-                    <div class="post-media wow fadeIn">
-                        <img src="images/Full Circuit.png" alt="" class="img-responsive img-rounded">
-                        <a href="http://www.youtube.com/watch?v=nrJtHemSPW4" data-rel="prettyPhoto[gal]" class="playbutton"><i class="flaticon-play-button"></i></a>
-                    </div><!-- end media -->
-                </div><!-- end col -->
-            </div><!-- end row -->
+# Software
 
-            <hr class="invis"> 
+## Web application
+  Web appliaction is designed to control access to the system. In our web application there are three types of administrator roles.They are,
 
-            <div class="row"> 
-                <div class="col-md-10 col-md-offset-1">
-				    <div class="section-title row text-center">
-						<h3>Data Flow</h3>
-					
-								<p>Data flowing from all three methods to web server and to the display</p>
-						<!-- end icon-wrapper -->
-					</div>
-                </div><!-- end col -->
-            </div><!-- end row -->
+     - To monitor database
+     - To add/update/delete personal data through web application
+     - To view all personal details and and their access time
+     
+ Speciality of this roles is that, each of these administrators able to handle only the given role. It makes the web application more secure. Moreover, 
+ Only these persons can login to the web applcation. For the authentication purpose we have added 2 factor authentication.
+  
+      - By using email and password 
+      - Send OTP to predeteremined mobile phone number.
 
-            <hr class="hr3"> 
+![ER diagram](https://raw.githubusercontent.com/cepdnaclk/e16-3yp-smart-door-lock/main/Images/ERdiagram.png)
 
-           
-        </div><!-- end container -->
+## UI design
+   ![UI Designs1](https://raw.githubusercontent.com/cepdnaclk/e16-3yp-smart-door-lock/main/Images/UIdesign1.png)
+   ![UI Designs2](https://raw.githubusercontent.com/cepdnaclk/e16-3yp-smart-door-lock/main/Images/UIdesign2.png)
+  
+  
+  
 
+ 
+# Detailed budget
 
-    <div id="software" class="parallax section noover" data-stellar-background-ratio="0.7" style="background-image:url('images/background.jpg');">
-        <div class="container">
-            <div class="section-title-center row text-center">
-                <div class="col-md-10 col-sm-offset-1">
-                    <div class="customwidget text-center">
-                        <h1>Software Application</h1>
-					</div>
-					<div class="section-title row text-left">
-						<h2>Web Application</h2>
-                        <p>Web appliaction is designed to control access to the system. In our web application there are three types of administrator roles.They are,</p>
-                    </div>
-					<div class="section-title row text-center">
-						<p>  - To monitor database</p>
-                        <p> - To add/update/delete personal data through web application</p>
-                        <p> - To view all personal details and and their access time</p>
-					</div>
-					<div class="section-title row text-left">					
-                        <P> Speciality of this roles is that, each of these administrators able to handle only the given role. It makes the web application more secure. Moreover, Only these persons can login to the web applcation. 
-                            For the authentication purpose we have added 2 factor authentication.</p>
-                    </div>
-                    <div class="section-title row text-center">
-                        <P>- By using email and password </p>
-                        <P>- Send OTP to predeteremined mobile phone number.</p>
-						
-						<ul class="list-inline">
-                            <li><i class="fa fa-check"></i> 20k Domains Sold in 2017</li>
-                            <li><i class="fa fa-check"></i> 4k Website Created</li>
-                        </ul>
-                        <!-- end list -->
-                        <a href="#hosting" data-scroll class="btn btn-light grd1 effect-1 btn-radius btn-brd">UI designs</a>
-                    </div>
-                </div>
-                <!-- end col -->
+![Budget](https://raw.githubusercontent.com/cepdnaclk/e16-3yp-smart-door-lock/main/Images/budget.png)
 
-                
-            </div><!-- end row -->
-        </div><!-- end container -->
-    </div><!-- end section -->
+* [Visit our github repository](https://github.com/cepdnaclk/e16-3yp-smart-door-lock/) 
 
-    <div id="hosting" class="section wb" style="background: rgb(248, 248, 248)">
-        <div class="container">
-            <div class="section-title text-center">
-                <h3>UI designs</h3>
-                <p class="lead"></p>
-            </div><!-- end title -->
-
-          
-        </div><!-- end container -->
-    </div><!-- end section -->
-
-	<div class="section cl">
-		<div class="container">
-			<div class="row text-left stat-wrap">
-				
-				</div><!-- end col -->
-			</div><!-- end row -->
-		</div><!-- end container -->
-	</div><!-- end section -->
-
-    <div id="pricing" class="section lb">
-        <div class="container">
-            <div class="section-title text-center">
-                <h3>ER Diagram</h3>
-                <p class="lead">Showing all the relationships</p>
-				<img src="images/ERdiagram.png" alt="" class="img-responsive">
-            </div><!-- end title -->
-
-
-            <hr class="invis">
-
-            
-        </div><!-- end container -->
-    </div><!-- end section -->
-
-    <div id="testimonials" class="parallax section db parallax-off" style="background-image:url('uploads/parallax_04.jpg');">
-        <div class="container">
-            <div class="section-title text-center">
-                <h3>Links</h3>
-				<li><a href="http://www.pdn.ac.lk" class="lead">University of Peradeniya</a></li>
-				<li><a href="http://www.eng.pdn.ac.lk" class="lead">Faculty of Engineering</a></li>
-				<li><a href="http://www.cepdn.ac.lk" class="lead">Department of Computer Engineering</a></li>
-            </div><!-- end title -->
-
-            
-        </div><!-- end container -->
-    </div><!-- end section -->
-
-
-    <footer id="contacts" class="footer">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-4 col-sm-4 col-xs-12">
-                    <div class="widget clearfix">
-                        <div class="widget-title">
-                            <h3>Project Contributors</h3>
-                        </div>
-                    </div><!-- end clearfix -->
-                </div><!-- end col -->
-
-				<div class="col-md-3 col-sm-3 col-xs-12">
-                    <div class="widget clearfix">
-                        <div class="widget-title">
-                            <h3>Name</h3>
-                        </div>
-                        <ul class="footer-links">
-                            <li><a href="#">Virajani Dharmathilaka</a></li>
-                            <li><a href="#">Tharushini Jayathilaka</a></li>
-                            <li><a href="#">Chanika Madushanki</a></li>
-                        </ul><!-- end links -->
-                    </div><!-- end clearfix -->
-                </div><!-- end col -->
-				
-                <div class="col-md-3 col-sm-3 col-xs-12">
-                    <div class="widget clearfix">
-                        <div class="widget-title">
-                            <h3>Contact Details</h3>
-                        </div>
-
-                        <ul class="footer-links">
-                            <li><a href="mailto:#">virajanidharmathilaka@gmail.com</a></li>
-                            <li><a href="mailto:#">tharuthiwanka@gmail.com</a></li>
-                            <li><a href="mailto:#">cmkariyawasam10@gmail.com</a></li>
-                        </ul><!-- end links -->
-                    </div><!-- end clearfix -->
-                </div><!-- end col -->
-
-                
-            </div><!-- end row -->
-        </div><!-- end container -->
-    </footer><!-- end footer -->
-
-    <div class="copyrights">
-        <div class="container">
-                <div class="footer-center">                   
-                    <p class="footer-company-name- center">End of page</p>
-                </div>
-        </div><!-- end container -->
-    </div><!-- end copyrights -->
-
-    <a href="#" id="scroll-to-top" class="dmtop global-radius"><i class="fa fa-angle-up"></i></a>
-
-    <!-- ALL JS FILES -->
-    <script src="js/all.js"></script>
-    <!-- ALL PLUGINS -->
-    <script src="js/custom.js"></script>
-
-</body>
-</html>
+## Advising Lecturers
+ 
+- Dr. Isuru Nawinne
+- Dr. Ziyan Maraikar
