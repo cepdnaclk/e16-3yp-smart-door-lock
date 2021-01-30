@@ -349,4 +349,3 @@ Therefore by this project we are developing a smart door lock including the foll
     <!-- ALL PLUGINS -->
     <script src="js/custom.js"></script>
 
-</html>
