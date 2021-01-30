@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+
 <html lang="en">
 
     <!-- Basic -->
@@ -135,7 +135,7 @@
 	
     <div id="overviews" class="section wb">
         <div class="container">
-            <div class="col-md-10 col-md-offset-1">
+            <div class="col-md-10 col-md-offset-3">
                 <div class="section-title row text-center">
                     <h3>Problems at the entrance</h3>
 				
@@ -351,5 +351,4 @@ Therefore by this project we are developing a smart door lock including the foll
     <!-- ALL PLUGINS -->
     <script src="js/custom.js"></script>
 
-</body>
 </html>
