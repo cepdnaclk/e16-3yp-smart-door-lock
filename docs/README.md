@@ -1,5 +1,5 @@
-
-
+<!DOCTYPE html>
+<html lang="en">
     <!-- Basic -->
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">   
@@ -349,4 +349,5 @@ Therefore by this project we are developing a smart door lock including the foll
     <script src="js/all.js"></script>
     <!-- ALL PLUGINS -->
     <script src="js/custom.js"></script>
-
+</body>
+</html>
