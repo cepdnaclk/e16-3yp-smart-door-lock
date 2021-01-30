@@ -1,5 +1,4 @@
 
-<html lang="en">
 
     <!-- Basic -->
     <meta charset="utf-8">
@@ -112,7 +111,7 @@
 		<!-- Indicators -->
 		<div class="carousel-inner" role="listbox">
 			<div class="item active">
-				<div id="home" class="first-section" style="background-image:url('images/front.jpg');">
+				<div id="home" class="first-section" style="background-image:url('images/Front.jpg');">
 					<div class="container">
 						<div class="row">
 							<div class="col-md-12 col-sm-12 text-center">
@@ -135,7 +134,7 @@
 	
     <div id="overviews" class="section wb">
         <div class="container">
-            <div class="col-md-8 col-md-offset-0">
+            <div class="col-md-8 col-md-offset-1">
                 <div class="section-title row text-center">
                     <h3>Problems at the entrance</h3>
 				
@@ -351,4 +350,3 @@ Therefore by this project we are developing a smart door lock including the foll
     <!-- ALL PLUGINS -->
     <script src="js/custom.js"></script>
 
-</html>
