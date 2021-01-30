@@ -1,5 +1,5 @@
 
-
+<head>
     <!-- Basic -->
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">   
@@ -111,7 +111,7 @@
 		<!-- Indicators -->
 		<div class="carousel-inner" role="listbox">
 			<div class="item active">
-				<div id="home" class="first-section" style="background-image:url('images/Front.jpg');">
+				<div id="home" class="first-section" style="background-image:url('https://github.com/cepdnaclk/e16-3yp-smart-door-lock/blob/main/docs/images/front.jpg');">
 					<div class="container">
 						<div class="row">
 							<div class="col-md-12 col-sm-12 text-center">
@@ -207,7 +207,7 @@ Therefore by this project we are developing a smart door lock including the foll
     <div id="software" class="parallax section noover" data-stellar-background-ratio="0.7" style="background-image:url('images/background.jpg');">
         <div class="container">
             <div class="section-title-center row text-center">
-                <div class="col-md-10 col-sm-offset-1">
+                <div class="col-md-8 col-sm-offset-1">
                     <div class="customwidget text-center">
                         <h1>Software Application</h1>
 					</div>
