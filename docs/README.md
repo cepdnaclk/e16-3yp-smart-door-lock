@@ -135,7 +135,7 @@
 	
     <div id="overviews" class="section wb">
         <div class="container">
-            <div class="col-md-10 col-md-offset-3">
+            <div class="col-md-10 col-md-offset-0">
                 <div class="section-title row text-center">
                     <h3>Problems at the entrance</h3>
 				
