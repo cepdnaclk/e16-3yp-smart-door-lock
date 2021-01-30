@@ -1,5 +1,4 @@
 
-<html lang="en">
 
     <!-- Basic -->
     <meta charset="utf-8">
@@ -39,8 +38,7 @@
       <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
 
-</head>
-<body class="host_version"> 
+
 
 	<!-- Modal -->
 	<div class="modal fade" id="login" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
@@ -135,7 +133,7 @@
 	
     <div id="overviews" class="section wb">
         <div class="container">
-            <div class="col-md-10 col-md-offset-1">
+            <div class="col-md-8 col-md-offset-1">
                 <div class="section-title row text-center">
                     <h3>Problems at the entrance</h3>
 				
