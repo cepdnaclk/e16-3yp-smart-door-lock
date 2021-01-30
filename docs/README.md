@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+
 
     <!-- Basic -->
     <meta charset="utf-8">
