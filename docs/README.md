@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
     <!-- Basic -->
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">   
@@ -134,7 +135,7 @@
 	
     <div id="overviews" class="section wb">
         <div class="container">
-            <div class="col-md-8 col-md-offset-1">
+            <div class="col-md-10 col-md-offset-1">
                 <div class="section-title row text-center">
                     <h3>Problems at the entrance</h3>
 				
@@ -163,7 +164,7 @@ Therefore by this project we are developing a smart door lock including the foll
 
         <div id="soln" class="container">
             <div class="row">
-                <div class="col-md-8 col-md-offset-1">
+                <div class="col-md-10 col-md-offset-1">
 				    <div class="section-title row text-center">
 				    <h3>Solution Architecture</h3>
 					</div>
@@ -188,7 +189,7 @@ Therefore by this project we are developing a smart door lock including the foll
             <hr class="invis"> 
 
             <div class="row"> 
-                <div class="col-md-8 col-md-offset-0">
+                <div class="col-md-10 col-md-offset-1">
 				    <div class="section-title row text-center">
 						<h3>Data Flow</h3>
 					
@@ -207,7 +208,7 @@ Therefore by this project we are developing a smart door lock including the foll
     <div id="software" class="parallax section noover" data-stellar-background-ratio="0.7" style="background-image:url('images/background.jpg');">
         <div class="container">
             <div class="section-title-center row text-center">
-                <div class="col-md-8 col-sm-offset-1">
+                <div class="col-md-10 col-sm-offset-1">
                     <div class="customwidget text-center">
                         <h1>Software Application</h1>
 					</div>
@@ -349,5 +350,6 @@ Therefore by this project we are developing a smart door lock including the foll
     <script src="js/all.js"></script>
     <!-- ALL PLUGINS -->
     <script src="js/custom.js"></script>
+
 </body>
 </html>
