@@ -135,7 +135,7 @@
 	
     <div id="overviews" class="section wb">
         <div class="container">
-            <div class="col-md-10 col-md-offset-0">
+            <div class="col-md-8 col-md-offset-0">
                 <div class="section-title row text-center">
                     <h3>Problems at the entrance</h3>
 				
@@ -164,7 +164,7 @@ Therefore by this project we are developing a smart door lock including the foll
 
         <div id="soln" class="container">
             <div class="row">
-                <div class="col-md-10 col-md-offset-1">
+                <div class="col-md-8 col-md-offset-1">
 				    <div class="section-title row text-center">
 				    <h3>Solution Architecture</h3>
 					</div>
@@ -189,7 +189,7 @@ Therefore by this project we are developing a smart door lock including the foll
             <hr class="invis"> 
 
             <div class="row"> 
-                <div class="col-md-10 col-md-offset-1">
+                <div class="col-md-8 col-md-offset-0">
 				    <div class="section-title row text-center">
 						<h3>Data Flow</h3>
 					
