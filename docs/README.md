@@ -1,5 +1,5 @@
-
-
+<!DOCTYPE html>
+<html lang="en">
     <!-- Basic -->
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">   
@@ -111,7 +111,7 @@
 		<!-- Indicators -->
 		<div class="carousel-inner" role="listbox">
 			<div class="item active">
-				<div id="home" class="first-section" style="background-image:url('https://github.com/cepdnaclk/e16-3yp-smart-door-lock/blob/main/docs/images/front.jpg');">
+				<div id="home" class="first-section" style="background-image:url('images/front.jpg');">
 					<div class="container">
 						<div class="row">
 							<div class="col-md-12 col-sm-12 text-center">
