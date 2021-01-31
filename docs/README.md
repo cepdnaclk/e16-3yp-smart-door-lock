@@ -37,7 +37,7 @@
       <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
       <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
-
+    
 </head>
 <body class="host_version"> 
 
@@ -205,7 +205,6 @@
     <div id="software" class="parallax section noover" data-stellar-background-ratio="0.7" style="background-image:url('images/background.jpg');">
         <div class="container">
             <div class="section-title-center row text-center">
-                <div class="col-md-10 col-sm-offset-1">
                     <div class="customwidget text-center">
                         <h1>Software Application</h1>
 					</div>
@@ -226,14 +225,11 @@
                         <P>- By using email and password </p>
                         <P>- Send OTP to predeteremined mobile phone number.</p>
 						
-						<ul class="list-inline">
-                            <li><i class="fa fa-check"></i> 20k Domains Sold in 2017</li>
-                            <li><i class="fa fa-check"></i> 4k Website Created</li>
-                        </ul>
+						
                         <!-- end list -->
                         <a href="#hosting" data-scroll class="btn btn-light grd1 effect-1 btn-radius btn-brd">UI designs</a>
                     </div>
-                </div>
+
                 <!-- end col -->
 
                 
@@ -301,7 +297,7 @@
                     </div><!-- end clearfix -->
                 </div><!-- end col -->
 
-				<div class="col-md-3 col-sm-3 col-xs-12">
+				<div class="col-md-3 col-sm-3 col-xs-15">
                     <div class="widget clearfix">
                         <div class="widget-title">
                             <h3>Name</h3>
@@ -349,5 +345,4 @@
     <script src="js/custom.js"></script>
 
 
-
-   </body>
+</body>
