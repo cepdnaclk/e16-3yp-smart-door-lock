@@ -1,5 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
+
 
     <!-- Basic -->
     <meta charset="utf-8">
@@ -39,7 +38,7 @@
       <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
 
-</head>
+
 <body class="host_version"> 
 
 	<!-- Modal -->
@@ -134,12 +133,11 @@
 	
     <div id="overviews" class="section wb">
         <div class="container">
-            <div class="col-md-10 col-md-offset-1">
+            <div class="col-md-8 col-md-offset-2">
                 <div class="section-title row text-center">
                     <h3>Problems at the entrance</h3>
 				
-                    <p class="lead">People who use doors for the entrances face different types of problems when entering. The security level, accuracy and efficiency of the current lock system at the entrance are some major causes for the user problems.
-Therefore by this project we are developing a smart door lock including the following main features.</p>
+                    <p class="lead">People who use doors for the entrances face different types of problems when entering. The security level, accuracy and efficiency of the current lock system at the entrance are some major causes for the user problems.Therefore by this project we are developing a smart door lock including the following main features.</p>
                 
 					    <li class="lead">Face Recognition</li>
                         <li class="lead">Finger Print detection</li>
@@ -163,7 +161,7 @@ Therefore by this project we are developing a smart door lock including the foll
 
         <div id="soln" class="container">
             <div class="row">
-                <div class="col-md-10 col-md-offset-1">
+                <div class="col-md-8 col-md-offset-2">
 				    <div class="section-title row text-center">
 				    <h3>Solution Architecture</h3>
 					</div>
@@ -350,7 +348,6 @@ Therefore by this project we are developing a smart door lock including the foll
     <!-- ALL PLUGINS -->
     <script src="js/custom.js"></script>
 
-</body>
-</html>
 
-   
+
+   </body>
