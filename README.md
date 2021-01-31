@@ -7,7 +7,7 @@ A project of third year students developing a smart door lock for the entrance.
 - Tharushini Jayathilaka   - E/16/156 - e16156@eng.pdn.ac.lk
 - Chanika Madushanki       - E/16/223 - e16223@eng.pdn.ac.lk
 
-* [Visit our website](https://github.com/cepdnaclk/e16-3yp-smart-door-lock/blob/main/docs/index.html) 
+* [Visit our website](https://cepdnaclk.github.io/e16-3yp-smart-door-lock) 
 
 ## Problems at Entrance
 
