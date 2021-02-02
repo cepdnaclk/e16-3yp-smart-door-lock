@@ -4,4 +4,6 @@ The Firebase Local Emulator Suite consists of individual service emulators built
 
 ## Check UserID validity
 Always the  IDs stored in the databse are compared with the ID which is taken by the hardware. So it is importatnt confirm that that process is correctly processing if not the unlocking records will be innacurrate.
+
+
 ![Test summary](https://github.com/cepdnaclk/e16-3yp-smart-door-lock/blob/main/Images/test%20summary.png)
