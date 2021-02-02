@@ -1,1 +1,2 @@
-Firebase security rules are checked using Firebase emulator suit
+## Firebase security rules are checked using Firebase emulator suit
+
