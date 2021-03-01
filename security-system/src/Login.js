@@ -76,11 +76,15 @@ class Login extends Component{
         fire.auth().signInWithEmailAndPassword(this.state.email,this.state.password).then((u)=>{
             console.log(u)
             console.log("sign in successful")
-           
+            let user = fire.auth().currentUser;
+           if(user.emailVerified){
             this.setState({isLoggedIn:true}) 
            this.UpdateTime();
            this.getnewStatus();
-            
+        } 
+        else{
+            document.querySelector('#regmsg').textContent='Sign in failed. Email not verified !!';
+        }
             
         }).catch((err)=>{
             console.log(err)

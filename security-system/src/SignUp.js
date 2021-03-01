@@ -142,6 +142,13 @@ console.log(formIsValid)
                 this.dataRegister();
                 document.querySelector('#regmsg').textContent="SignUp Successfull";
                 
+                //email varification
+                fire.auth().currentUser.sendEmailVerification().then(function() {
+                    document.querySelector('#regmsg').textContent="Verification email is sent to the email address ";
+                }, function(error) {
+                    document.querySelector('#regmsg').textContent="Error in SignUp";
+                 });
+                
             }).catch((err)=>{
                 console.log(err)
                 document.querySelector('#regmsg').textContent="Error in SignUp";
@@ -205,7 +212,7 @@ console.log(formIsValid)
                     </div>
                     <div class="form-group">
                         <label >Password</label>
-                        <input type="text" class="form-control" id="pw" 
+                        <input type="password" class="form-control" id="pw" 
                         name="password" placeholder="Enter the password" onChange={this.handleText}     
                              required="required"/>
                     </div>
