@@ -21,3 +21,5 @@ All the hardware configurations are planned to do in python language and Reactjs
 
 - encrypt_decrypt.py - python implementation for encryption and decryption process
 - encrypt_decrypt.js - JavaScript implementation for encryption and decryption process
+
+![Test summary](https://github.com/cepdnaclk/e16-3yp-smart-door-lock/blob/main/Images/encrypt_test.png)
