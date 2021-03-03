@@ -6,6 +6,7 @@
     "@testing-library/jest-dom": "^5.11.4",
     "@testing-library/react": "^11.1.0",
     "@testing-library/user-event": "^12.1.10",
+    "crypto-js": "^4.0.0",
     "enzyme": "^3.11.0",
     "firebase": "^8.2.1",
     "firebase-admin": "^9.4.2",

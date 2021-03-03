@@ -87,7 +87,7 @@ class ChangeNumber  extends Component{
 
                 <div class="form-group">
                 
-                    <input type="text" class="form-control" name="number" id="number"  placeholder="+94........."
+                    <input type="text" class="form-control" name="number" id="number" autoComplete='off' placeholder="+94........."
                     onChange = {this.handleChange}  
                     value ={this.state.number} />
                     

@@ -4,6 +4,8 @@ import Home from "./Home.js";
 import {Link} from 'react-router-dom';
 import SignUp from "./SignUp.js"
 
+const CryptoJS = require('crypto-js');
+const key = CryptoJS.enc.Utf8.parse('1234567890123456');
 
 class AddData extends Component{
 
@@ -13,6 +15,8 @@ class AddData extends Component{
         this.OnSubmit= this.OnSubmit.bind(this);
         this.OnExit =this.OnExit.bind(this);
         this.handleValidation =this.handleValidation.bind(this);
+        this.encrypt =this.encrypt.bind(this);
+        this.decrypt =this.decrypt.bind(this);
         this.state = {
             UserName :"",
             UserDepartment : "",
@@ -27,6 +31,32 @@ class AddData extends Component{
         
          console.log("Night:",this.state.Night)
             
+    }
+    encrypt(msgString){
+    let iv = CryptoJS.lib.WordArray.random(16);
+    let encrypted = CryptoJS.AES.encrypt(msgString, key, {
+        iv: iv
+    });
+    let ciphertextStr =iv.concat(encrypted.ciphertext).toString(CryptoJS.enc.Base64);
+    return(ciphertextStr);
+   
+    }
+    decrypt(ciphertextStr){
+        let ciphertext = CryptoJS.enc.Base64.parse(ciphertextStr);
+        console.log(ciphertextStr)
+        // split IV and ciphertext
+        let iv = ciphertext.clone();
+        iv.sigBytes = 16;
+        iv.clamp();
+        ciphertext.words.splice(0, 4); // delete 4 words = 16 bytes
+        ciphertext.sigBytes -= 16;
+
+        // decryption
+        let decrypted = CryptoJS.AES.decrypt({ciphertext: ciphertext}, key, {
+            iv: iv
+        });
+        console.log("decrpted msg");
+        return(decrypted.toString(CryptoJS.enc.Utf8));
     }
 
 
@@ -60,6 +90,8 @@ console.log(formIsValid)
          console.log(this.state.Night)
     }
     OnSubmit=e=>{
+       // let encrypted_msg=this.encrypt();
+        //let decrypted_msg=this.decrypt(encrypted_msg);
         if(this.handleValidation()){
         var alreadyexists=0;
         console.log("this is onsubmit")
@@ -71,7 +103,7 @@ console.log(formIsValid)
         // console.log(snapshot.child("/AdminId").val());
        
         for(let id in userhistory){
-            var storedid =userhistory[id]['UserID'];
+            var storedid =this.decrypt(userhistory[id]['UserID']);
             console.log('storedId',storedid)
            if(storedid == this.state.UserID ){
                console.log('same')
@@ -87,9 +119,9 @@ console.log(formIsValid)
         console.log('status:',alreadyexists)
         if(alreadyexists !=1){
        fire.database().ref('/Users').push().set({
-            UserID: this.state.UserID,
+            UserID: this.encrypt(this.state.UserID),
             UserDepartment: this.state.UserDepartment,
-            UserName: this.state.UserName,
+            UserName: this.encrypt(this.state.UserName),
             AccessTime:{
                 Day:this.state.Day,
                 Night : this.state.Night
@@ -117,6 +149,15 @@ console.log(formIsValid)
             Array.from(document.querySelectorAll("input")).forEach(
                 input => (input.value = "")
               );
+              this.setState({
+                UserName :"",
+                UserDepartment : "",
+                UserID : "",
+                AccessTime:{
+                    Day:false,
+                    Night : false
+                }
+              });
         }
     } //validation end
 

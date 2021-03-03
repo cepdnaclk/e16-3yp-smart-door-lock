@@ -4,6 +4,8 @@ import Home from "./Home.js";
 import {Link} from 'react-router-dom';
 import AddData from './AddData.js';
 
+const CryptoJS = require('crypto-js');
+const key = CryptoJS.enc.Utf8.parse('1234567890123456');
 
 class SignUp extends Component{
 
@@ -13,6 +15,9 @@ class SignUp extends Component{
         this.OnSubmit= this.OnSubmit.bind(this);
         this.OnExit =this.OnExit.bind(this);
         this.handleValidation =this.handleValidation.bind(this);
+        this.encrypt =this.encrypt.bind(this);
+        this.decrypt =this.decrypt.bind(this);
+        this.isValidState =this.isValidState.bind(this);
         this.state = {
             UserName :"",
             UserDepartment : "",
@@ -34,6 +39,32 @@ class SignUp extends Component{
             
     }
 
+    encrypt(msgString){
+        let iv = CryptoJS.lib.WordArray.random(16);
+        let encrypted = CryptoJS.AES.encrypt(msgString, key, {
+            iv: iv
+        });
+        let ciphertextStr =iv.concat(encrypted.ciphertext).toString(CryptoJS.enc.Base64);
+        return(ciphertextStr);
+       
+        }
+        decrypt(ciphertextStr){
+            let ciphertext = CryptoJS.enc.Base64.parse(ciphertextStr);
+            console.log(ciphertextStr)
+            // split IV and ciphertext
+            let iv = ciphertext.clone();
+            iv.sigBytes = 16;
+            iv.clamp();
+            ciphertext.words.splice(0, 4); // delete 4 words = 16 bytes
+            ciphertext.sigBytes -= 16;
+    
+            // decryption
+            let decrypted = CryptoJS.AES.decrypt({ciphertext: ciphertext}, key, {
+                iv: iv
+            });
+            console.log("decrpted msg");
+            return(decrypted.toString(CryptoJS.enc.Utf8));
+        }
 
     //handdle form validation
     handleValidation(){
@@ -41,23 +72,27 @@ console.log("inside handlevalidation");
         let formIsValid = true;
         let errors="";
         let vname=this.state.UserName;
-        if(this.state.UserDepartment=="" | this.state.UserID=="" | this.state.UserName=="" | (this.state.Day==false && this.state.Night==false)| this.state.email=="" | this.state.password=="" ){
+        if(this.state.UserDepartment==""|this.state.sec_status=='' | this.state.UserID=="" | this.state.UserName=="" | (this.state.Day==false && this.state.Night==false)| this.state.email=="" | this.state.password=="" ){
             formIsValid = false;
             document.querySelector('#regmsg').textContent="Please complete all the fields";
             console.log ('empty')
         }
         
-      /*  else if(typeof vname!== "undefined"){
-           if(!vname.match(/^[a-zA-Z]+$+" "/)){
-              formIsValid = false;
-              alert("Invalide name format. Please use alphabetical charactors ");
-           }        
-        }*/
         this.setState({errors: errors});
 console.log(formIsValid)
        return formIsValid;
        
    }
+    isValidState(){
+        let statevalid =true;
+        if(this.sec_status=='ENTERDATA'|this.state.sec_status=='VIEWDATA'|this.state.sec_status=='UPDATEDATA'){
+            statevalid=true;
+        }
+        else{
+            statevalid=false
+        }
+        return statevalid;
+    }
     
     handleText=e=>{
         
@@ -94,10 +129,10 @@ console.log(formIsValid)
        //  if(alreadyexists !=1){
         fire.database().ref('/AdminProfiles').push().set({
             Email:this.state.email,
-                UserID: this.state.UserID,
+                UserID: this.encrypt(this.state.UserID),
                 UserDepartment: this.state.UserDepartment,
-                UserName: this.state.UserName,
-                SecurityStatus:this.state.sec_status,
+                UserName:this.encrypt( this.state.UserName),
+                SecurityStatus:this.encrypt(this.state.sec_status),
                 AccessTime:{
                     Day:this.state.Day,
                     Night : this.state.Night
@@ -131,10 +166,10 @@ console.log(formIsValid)
             }*/
     }
     OnSubmit=e=>{
-        if(this.handleValidation()){
+        if(this.handleValidation()&&this.isValidState()){
 
             //signup
-            
+            console.log(this.state.email)
             fire.auth().createUserWithEmailAndPassword(this.state.email,this.state.password).then((u)=>{
                 console.log(u)
                 console.log("sign up successful")
@@ -146,12 +181,12 @@ console.log(formIsValid)
                 fire.auth().currentUser.sendEmailVerification().then(function() {
                     document.querySelector('#regmsg').textContent="Verification email is sent to the email address ";
                 }, function(error) {
-                    document.querySelector('#regmsg').textContent="Error in SignUp";
+                    document.querySelector('#regmsg').textContent=error;
                  });
                 
             }).catch((err)=>{
                 console.log(err)
-                document.querySelector('#regmsg').textContent="Error in SignUp";
+                document.querySelector('#regmsg').textContent=err;
             })
             console.log(this.state.validsignup)
             if(this.state.validsignup){
@@ -159,9 +194,13 @@ console.log(formIsValid)
              }
     
          }  
-            else{
-            
-            }   
+         else if(this.isValidState()&(!this.handleValidation())){
+            document.querySelector('#regmsg').textContent="All fields must be filled";
+        }
+        else if((!this.isValidState())&this.handleValidation()){
+            document.querySelector('#regmsg').textContent="Enter valid security state";
+         }
+                     
         
     }
 

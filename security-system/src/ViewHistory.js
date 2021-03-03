@@ -6,6 +6,9 @@ import Notification from "./Notification.js";
 import AdminHistory from "./AdminHistory.js";
 import userhistory from "./UserHistory.js";
 
+const CryptoJS = require('crypto-js');
+const key = CryptoJS.enc.Utf8.parse('1234567890123456');
+
 class ViewHistory extends Component{
     
     constructor(props){
@@ -13,6 +16,8 @@ class ViewHistory extends Component{
         this.OnSearch =this.OnSearch.bind(this);
         this.handlesearch =this.handlesearch.bind(this);
         this.handleText =this.handleText.bind(this);
+        this.encrypt =this.encrypt.bind(this);
+        this.decrypt =this.decrypt.bind(this);
         this.state ={
             userhistory:[],
             AdminHistory:[],
@@ -24,6 +29,33 @@ class ViewHistory extends Component{
             notification:false
         }
     }
+    encrypt(msgString){
+      let iv = CryptoJS.lib.WordArray.random(16);
+      let encrypted = CryptoJS.AES.encrypt(msgString, key, {
+          iv: iv
+      });
+      let ciphertextStr =iv.concat(encrypted.ciphertext).toString(CryptoJS.enc.Base64);
+      return(ciphertextStr);
+     
+   }
+
+  decrypt(ciphertextStr){
+      let ciphertext = CryptoJS.enc.Base64.parse(ciphertextStr);
+      console.log(ciphertextStr)
+      // split IV and ciphertext
+      let iv = ciphertext.clone();
+      iv.sigBytes = 16;
+      iv.clamp();
+      ciphertext.words.splice(0, 4); // delete 4 words = 16 bytes
+      ciphertext.sigBytes -= 16;
+
+      // decryption
+      let decrypted = CryptoJS.AES.decrypt({ciphertext: ciphertext}, key, {
+          iv: iv
+      });
+      console.log("decrpted msg");
+      return(decrypted.toString(CryptoJS.enc.Utf8));
+  }
     handleText=e=>{
             
       this.setState({
@@ -56,7 +88,7 @@ class ViewHistory extends Component{
        
             for(let id in userhistory){
                 count++;
-                var storedid =userhistory[id]['userid'];
+                var storedid =this.decrypt(userhistory[id]['userid']);
                 console.log('storedId',storedid)
                 console.log('searchid',this.state.searchId)
                 if(storedid == this.state.searchId){
@@ -68,8 +100,8 @@ class ViewHistory extends Component{
                     console.log('IDsetstate',this.state.UserID)
                     
                    newState.push({
-                    UserID : userhistory[id]['userid'],
-                    UserName:userhistory[id]['UserName'],
+                    UserID : this.decrypt(userhistory[id]['userid']),
+                    UserName:this.decrypt(userhistory[id]['UserName']),
                     EnteredDateTime : userhistory[id]['date & time']
                     }) ;
                     
