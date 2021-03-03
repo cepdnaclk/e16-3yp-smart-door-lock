@@ -12,7 +12,7 @@ Always the  IDs stored in the databse are compared with the ID which is taken by
 
 In the database, userID of each employee and the security status of a Admin is considered as most sensitive data stored in the database as userID is directly connected with hardware components which gives the access to the doors and admin privilages are depend on the security status of a admin. So these data is stored in the database after encryption.
 
-Advanced Encryption Standard <b>(AES)</b> which is a <b>symmentric block ciper</b> is used to encrypt this sensitive data. Encryption function is implemented according to the following specifications.
+Advanced Encryption Standard <b>(AES)</b> which is a <b>symmentric block ciper</b> , is used to encrypt this sensitive data. Encryption function is implemented according to the following specifications.
   - Mode of operation -> CBC
   - Padding ->Zero Padding 
   - Key -> clear key
