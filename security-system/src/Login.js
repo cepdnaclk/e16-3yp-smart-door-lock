@@ -7,6 +7,9 @@ import AddData from "./AddData.js";
 import ViewHistory from "./ViewHistory";
 import Edit from "./Edit.js";
 
+const CryptoJS = require('crypto-js');
+const key = CryptoJS.enc.Utf8.parse('1234567890123456');
+
 class Login extends Component{
     constructor(props){
         super(props)
@@ -16,6 +19,7 @@ class Login extends Component{
         this.getnewStatus = this.getnewStatus.bind(this);
         this.OnSignInSubmit =this.OnSignInSubmit.bind(this);
         this.OnSubmitOtp = this.OnSubmitOtp.bind(this);
+        this.decrypt =this.decrypt.bind(this);
         this.state ={
             email : "",
             password : "",
@@ -30,6 +34,24 @@ class Login extends Component{
 
         }
     }
+   
+    decrypt(ciphertextStr){
+        let ciphertext = CryptoJS.enc.Base64.parse(ciphertextStr);
+        console.log(ciphertextStr)
+        // split IV and ciphertext
+        let iv = ciphertext.clone();
+        iv.sigBytes = 16;
+        iv.clamp();
+        ciphertext.words.splice(0, 4); // delete 4 words = 16 bytes
+        ciphertext.sigBytes -= 16;
+
+        // decryption
+        let decrypted = CryptoJS.AES.decrypt({ciphertext: ciphertext}, key, {
+            iv: iv
+        });
+        console.log("decrpted msg");
+        return(decrypted.toString(CryptoJS.enc.Utf8));
+    }       
 
     UpdateTime(){
         let count=0;
@@ -134,7 +156,7 @@ class Login extends Component{
                     if(storedemail == this.state.email){
                         console.log('id',id)
                         st =Admindata[id]['SecurityStatus'];
-                       this.setState({ status: Admindata[id]['SecurityStatus']  });
+                       this.setState({ status: this.decrypt(Admindata[id]['SecurityStatus'] ) });
                      
                     }
                    

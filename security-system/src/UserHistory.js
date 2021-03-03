@@ -4,11 +4,14 @@ import Home from "./Home.js";
 import {  Link} from 'react-router-dom';
 import ViewHistory from "./ViewHistory.js";
 
+const CryptoJS = require('crypto-js');
+const key = CryptoJS.enc.Utf8.parse('1234567890123456');
+
 class UserHistory extends Component{
     
     constructor(props){
         super(props)
-        
+        this.decrypt =this.decrypt.bind(this);
         this.state ={
             userhistory:[],
             DBtag:'',
@@ -16,7 +19,25 @@ class UserHistory extends Component{
             
         }
     }
-   
+    
+
+    decrypt(ciphertextStr){
+        let ciphertext = CryptoJS.enc.Base64.parse(ciphertextStr);
+        console.log(ciphertextStr)
+        // split IV and ciphertext
+        let iv = ciphertext.clone();
+        iv.sigBytes = 16;
+        iv.clamp();
+        ciphertext.words.splice(0, 4); // delete 4 words = 16 bytes
+        ciphertext.sigBytes -= 16;
+
+        // decryption
+        let decrypted = CryptoJS.AES.decrypt({ciphertext: ciphertext}, key, {
+            iv: iv
+        });
+        console.log("decrpted msg");
+        return(decrypted.toString(CryptoJS.enc.Utf8));
+    }
     componentDidMount(){
         
         
@@ -29,8 +50,8 @@ class UserHistory extends Component{
               for(let id in userhistory){
                   
                  newState.push({
-                    UserID : userhistory[id]['UserID'],
-                    UserName:userhistory[id]['UserName'],
+                    UserID : this.decrypt(userhistory[id]['UserID']),
+                    UserName:this.decrypt(userhistory[id]['UserName']),
                     UserDepartment : userhistory[id]['UserDepartment'],
                     LastModifiedDate : userhistory[id]['LastModifiedDate'],
                         
