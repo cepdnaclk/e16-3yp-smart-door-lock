@@ -194,7 +194,7 @@ class ViewHistory extends Component{
                         <tr>
                           <th scope="col">User ID</th>
                           <th scope="col">User Name</th>
-                          <th scope="col">Last modified date and time</th>
+                          <th scope="col">Last door access date and time</th>
                          
                           
                         </tr>

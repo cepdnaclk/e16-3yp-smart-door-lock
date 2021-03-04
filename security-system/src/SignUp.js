@@ -85,7 +85,7 @@ console.log(formIsValid)
    }
     isValidState(){
         let statevalid =true;
-        if(this.sec_status=='ENTERDATA'|this.state.sec_status=='VIEWDATA'|this.state.sec_status=='UPDATEDATA'){
+        if(this.state.sec_status=='ENTERDATA'|this.state.sec_status=='VIEWDATA'|this.state.sec_status=='UPDATEDATA'){
             statevalid=true;
         }
         else{

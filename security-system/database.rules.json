@@ -1,0 +1,42 @@
+{
+  "rules": {
+    "AdminProfiles":{
+      ".read": true,
+      "$uid" : {
+        ".write" : "auth!= null"
+      }
+    },
+  
+    "Attendance":{
+      ".read": "auth!= null",
+      "$uid" : {
+        ".write" : true
+      }
+    },
+      
+    "OTPnumber":{
+      ".read": "auth!= null",
+      
+      ".write" : true
+      
+    },
+    
+    "Unauthorized Access":{
+      ".read": "auth!= null",
+      
+      ".write": true,
+     
+      
+    },
+      
+    "Users":{
+      ".read": true,
+      
+      ".write": "auth!= null",
+     
+      
+    }
+      
+    
+  }
+}
