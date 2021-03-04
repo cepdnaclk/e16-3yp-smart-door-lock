@@ -23,3 +23,8 @@ All the hardware configurations are planned to do in python language and Reactjs
 - encrypt_decrypt.js - JavaScript implementation for encryption and decryption process
 
 ![Test summary](https://github.com/cepdnaclk/e16-3yp-smart-door-lock/blob/main/Images/encrypt_test.png)
+
+ #### Test 5 - Time taken for encryption and decryption
+ Data encryption and decyption may cause the delays in the reliable data transfer to the frontend and hardware components. So we have checked the time taken for that. Actualy   it takes few microseconds. So the effect of delay can be neglegible. Following values may slightly change according to the data we use
+   - for encyption = 0:00:00.000782
+   - for decryption = 0:00:00.000019
