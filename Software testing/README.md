@@ -3,7 +3,7 @@
 The Firebase Local Emulator Suite consists of individual service emulators built to accurately mimic the behavior of Firebase services.It enables app to directly connect to these emulators to perform integration testing.Through this we checked whom can access to the data as we set security rules to deny permission for unauthorized access.
 
 ## Check UserID validity
-Always the  IDs stored in the databse are compared with the ID which is taken by the hardware. So it is importatnt confirm that that process is correctly processing if not the unlocking records will be innacurrate. InputAttendance.py code is used for testing this.
+Always the  IDs stored in the databse are compared with the ID which is taken by the hardware. So it is importat to confirm that process is correctly processing if not the unlocking records will be innacurrate. InputAttendance.py code is used for testing this.
 
 
 ![Test summary](https://github.com/cepdnaclk/e16-3yp-smart-door-lock/blob/main/Images/test%20summary.png)
@@ -25,6 +25,6 @@ All the hardware configurations are planned to do in python language and Reactjs
 ![Test summary](https://github.com/cepdnaclk/e16-3yp-smart-door-lock/blob/main/Images/encrypt_test.png)
 
  #### Test 5 - Time taken for encryption and decryption
- Data encryption and decyption may cause the delays in the reliable data transfer to the frontend and hardware components. So we have checked the time taken for that. Actualy   it takes few microseconds. So the effect of delay can be neglegible. Following values may slightly change according to the data we use
+ Data encryption and decryption may cause the delays in the reliable data transfer to the frontend and hardware components. So we have checked the time taken for that. Actualy   it takes few microseconds. So the effect of delay can be neglegible. Following values may slightly change according to the data we use
    - for encyption = 0:00:00.000782
    - for decryption = 0:00:00.000019
