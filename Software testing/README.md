@@ -6,7 +6,7 @@ The Firebase Local Emulator Suite consists of individual service emulators built
 Always the  IDs stored in the databse are compared with the ID which is taken by the hardware. So it is importat to confirm that process is correctly processing if not the unlocking records will be innacurrate. InputAttendance.py code is used for testing this.
 
 
-![Test summary](https://github.com/cepdnaclk/e16-3yp-smart-door-lock/blob/main/Images/test%20summary.png)
+![Test summary](https://github.com/cepdnaclk/e16-3yp-smart-door-lock/blob/main/Images/test2.png)
 
 ## Data encryption and Decryption function testing
 
