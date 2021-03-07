@@ -203,7 +203,7 @@ class ViewHistory extends Component{
                       {this.state.emps? this.state.emps.map(emp => {
                           return ( 
                             <tr class="table-active">
-                            <td>{emp.UserID}</td> 
+                            <td>{emp.UserID}</td>   
                             <td>{emp.UserName}</td>
                             <td>{emp.EnteredDateTime}</td>         
                             </tr>
