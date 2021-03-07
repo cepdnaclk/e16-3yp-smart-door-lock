@@ -98,7 +98,10 @@
                         <li><a class="active" href="index.html">Home</a></li>
 						<li><a data-scroll href="#overviews" >About</a></li> 
                         <li><a data-scroll href="#soln" >Hardware Design</a></li> 
-                        <li><a data-scroll href="#software">Software</a></li>              
+                        <li><a data-scroll href="#software">Software</a></li>
+                        <li><a data-scroll href="#testing">Testing</a></li>
+                        <li><a data-scroll href="#pricing">Budget</a></li>
+
                         <li><a data-scroll href="#contacts">Contact</a></li>
                     </ul>
              
@@ -322,7 +325,7 @@ Therefore by this project we are developing a smart door lock including the foll
 		</div><!-- end container -->
 	</div><!-- end section -->
 
-    <div id="pricing" class="section lb">
+    <div id="testing" class="section lb">
         <div class="container">
             <div class="section-title text-center">
                 <h3>Software Testing</h3>
@@ -331,18 +334,82 @@ Therefore by this project we are developing a smart door lock including the foll
 </p><br>
 			<h2>Check UsedID validity</h2>
                 <p class="lead">Always the  IDs stored in the databse are compared with the ID which is taken by the hardware. So it is importatnt confirm that that process is correctly processing if not the unlocking records will be innacurrate.
-</p>
-		    <img src="images/test summary.png" alt="" class="img-responsive"><br>
+</p></br>
+		    <img src="images/test2.png" alt="" class="img-responsive"><br>
 		   
-		    <img src="images/budget.png" alt="" class="img-responsive">
+		    
+
+           
+            
             </div><!-- end title -->
-
-
+             
             <hr class="invis">
 
             
         </div><!-- end container -->
+        <!--hardware testing-start-->
+        <div class="section-title text-center"> <h3>Hardware Testing</h3></div>
+        <div style="text-align:left">
+            <h2 style="color:#1d1d1af3">    01.      Check each unit separately</h2></br>
+            <table><tr>
+                <td>
+                    <h4 class="lead"  style="color:rgb(34, 175, 156)">Fingerprint sensor</h4></br>
+                    <p class="lead">- Ability to scan a fingerprint
+                    </br>- Validate the fingerprint accuracy</br>- Test after updating new fingerprints</br>
+                     - Test with valid user when,
+
+                </br  >&emsp;Finger is dipped with water
+                        </br  >&emsp;Finger is dipped with any color 
+                        </br >&emsp;Sketch mark is on finger
+                        </br  >&emsp;Finger is covered with transparent gloves
+                        </br  >&emsp;Different angle of the finger is used</p></br>
+
+                    <h4 class="lead"  style="color:rgb(34, 175, 156)">Rfid card reader</h4></br>
+                    <p class="lead">- Test the environment in which the tag is being 
+                        read<br>&ensp;(need to check whether this is being too vulnerable <br>&ensp;to environment factors)
+                        </br>- Test different orientations of the tag</p> </br>
+                </td>
+                  <td>  </td>    
+                 <td>
+                        <h4 class="lead"  style="color:rgb(34, 175, 156)">Face recognition</h4></br>
+                    <p class="lead">- Test the three important stages of face recognition process
+                    </br>&emsp;   I.	Face detection</br>&ensp;Using different lighting conditions
+                   </br>&ensp;Using different times of day
+                    </br>&emsp;   II.	Face capture
+                    </br>&emsp;   III.	Face match
+                     </br>&ensp;Using different lighting conditions
+                    </br>&ensp;Using different times of day
+                    </br>&ensp;Using different moods and emotional states
+                    </p></br>
+
+                    <h4 class="lead"  style="color:rgb(34, 175, 156)">&emsp;IR sensors</h4></br>
+                    <p class="lead">&emsp;- How the sensors can be detected<br>&ensp;&emsp;(Can use a small circuit of led blinking)
+                        </br>&emsp;- Test if two people get detected and check <br>&ensp;&emsp;that message goes to buzzer </p> </br>
+                    
+                </td>
+
+            </tr></table>
+            <h2 style="color:#1d1d1af3">    02.      Check whole combined unit </h2></br>
+            <p class="lead">&emsp;- After updating new user details check how the entire system works
+            </br>&emsp;- Power Supply
+        </br>&emsp;- Check the connectivity of whole system ( Using blinking an led or oscilloscope and logic probes)
+                </p><br>
+
+                <h2 style="color:#1d1d1af3">Performance Testing</h2><br>
+                <p class="lead">A.&emsp;	Test the performance of each unit and whole system for allowing a valid user <br>&emsp;– the time taken by the each unit and whole system to allow the user
+                    <br>B.&emsp;	Test the performance of each unit and whole system for not allowing an invalid user <br>&emsp;– the time taken by the each unit and whole system to identify an invalid user
+                    <br>C.&emsp;	Test the time of the entry of the user is recorded to the system after been authorized
+                    </p>
+        
+        </div>
+       
+        <!--hardware testing-end-->
     </div><!-- end section -->
+
+    <div id="pricing" >
+        <img src="images/budget.png" alt="" class="img-responsive">
+
+    </div>
 
     <div id="testimonials" class="parallax section db parallax-off" style="background-image:url('uploads/parallax_04.jpg');">
         <div class="container">
