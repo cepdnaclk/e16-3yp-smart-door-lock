@@ -94,6 +94,8 @@ console.log(formIsValid)
         //let decrypted_msg=this.decrypt(encrypted_msg);
         if(this.handleValidation()){
         var alreadyexists=0;
+        var count=0;
+        var len=0;
         console.log("this is onsubmit")
         const empref = fire.database().ref("/Users");
         empref.on("value", snapshot => {
@@ -101,7 +103,8 @@ console.log(formIsValid)
           let userhistory = snapshot.val();
         console.log("/Users",userhistory)
         // console.log(snapshot.child("/AdminId").val());
-       
+       len =userhistory.length;
+       console.log("len",len);
         for(let id in userhistory){
             var storedid =this.decrypt(userhistory[id]['UserID']);
             console.log('storedId',storedid)
@@ -111,6 +114,7 @@ console.log(formIsValid)
                 
                 
            }
+           
            
         }
 

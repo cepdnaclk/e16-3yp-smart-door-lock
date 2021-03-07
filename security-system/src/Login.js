@@ -284,6 +284,7 @@ class Login extends Component{
           
           <div>
              
+            
               
           <br/>
           <div class="alert alert-dismissible alert-info">
@@ -293,7 +294,11 @@ class Login extends Component{
               <p class="text-muted">Enter cancel to exit or enter continue to procceed</p>
               <br/> 
           </div>
-          <br/> <br/> 
+          
+          <table>
+          
+          <tr>
+          <td>
           <button type="button" class="btn btn-primary" onClick={() => {
 
               this.setState({isCancel: true});
@@ -306,6 +311,8 @@ class Login extends Component{
           </button>
           
           <br/><br/>
+
+         
           <div class="form-group">
                         
              <input type="number" class="form-control" name="otp" onChange = {this.handleChange}  autoComplete='off' id="otp" placeholder="input OTP"
@@ -330,12 +337,20 @@ class Login extends Component{
 
               this.setState({changePW: true});
               }}>ClickHereToChangeYourPassword</button>          
+</td>
+<td><img src="/images/image9.jpeg"   width="90%" height="250" align="right"></img></td>
+ </tr>
+</table>
 
       </div>
   )
           }
         return(
             <div>
+                <table>
+                    <tr>
+                        <td><img src="/images/image6.jpg"   width="90%" height="500"></img></td>
+                        <td>
                         <form>
                 <fieldset>
                     <legend>Sign in</legend>
@@ -365,7 +380,10 @@ class Login extends Component{
 
                 </fieldset>
                 </form>
-                <p class="text-warning" id='regmsg'></p> 
+                <p class="text-warning" id='regmsg'></p>
+                </td>
+                </tr>
+                </table>
             </div>
         )
     }
