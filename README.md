@@ -28,7 +28,7 @@ In addition to them following features will be included in the smart door lock.
 - Information display of the current user
 - Allowing only one person to enter at a time
 - Web Application to control access
-- No access at night
+- Access time control
 
 ## Data Flow
  
