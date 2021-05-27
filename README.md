@@ -57,7 +57,7 @@ Always the  IDs stored in the databse are compared with the ID which is taken by
    - for encyption = 0:00:00.000782
    - for decryption = 0:00:00.000019
 
-[Know more details about software testing](https://github.com/cepdnaclk/e16-3yp-smart-door-lock/tree/main/Software%20testing)
+[Know more details about software testing...](https://github.com/cepdnaclk/e16-3yp-smart-door-lock/tree/main/Software%20testing)
  
  ## Advising Lecturers
  
