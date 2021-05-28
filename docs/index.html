@@ -97,7 +97,8 @@
                     <ul class="nav navbar-nav">
                         <li><a class="active" href="index.html">Home</a></li>
 						<li><a data-scroll href="#overviews" >About</a></li> 
-                        <li><a data-scroll href="#soln" >Hardware Design</a></li> 
+                        <li><a data-scroll href="#soln" >Solution Architecture</a></li> 
+                        <li><a data-scroll href="#hardware" >Hardware</a></li>
                         <li><a data-scroll href="#software">Software</a></li>
 			<li><a data-scroll href="#testing">Testing</a></li>
                         <li><a data-scroll href="#pricing">Budget</a></li>
@@ -163,6 +164,7 @@ Therefore by this project we are developing a smart door lock including the foll
 		</div>
     </div>		
 
+    <!--solution Arch start-->
         <div id="soln" class="container">
             <div class="row">
                 <div class="col-md-10 col-md-offset-1">
@@ -173,37 +175,194 @@ Therefore by this project we are developing a smart door lock including the foll
 				<div class="col-md-6">
                     <div class="container- right">
                        
-                        <p class="lead"> The data collected from all the three methods( Face recognition, Finger Print and RFID) are sent to a web server. From there the data is stored in the web application and displayed on the display for the current user.</p>
+                        <p class="lead">
+                            user data can be taken from the Finger print sensor, RFID card module and camera module.Those data can be compared with the data stored in the firebase realtime database.
+                            Hardware components communicate with the firebase database using get and post requests of HTTP protocol. Realtime database is connected with the web application and read 
+                            and write data from it. Firebase Hosting services are used for cloud deployment of the web site.
+                        </p>
 
 
                     </div><!-- end messagebox -->
                 </div><!-- end col -->
 				
-				<div class="col-md-6">
+				<div class="col-md-6"><!--start product overview-->
                     <div class="post-media wow fadeIn">
-                        <img src="images/Final Circuit.png" alt="" class="img-responsive img-rounded">
+                        <img src="images/Data Flow.png" alt="" class="img-responsive img-rounded">
                         <a href="http://www.youtube.com/watch?v=nrJtHemSPW4" data-rel="prettyPhoto[gal]" class="playbutton"><i class="flaticon-play-button"></i></a>
-                    </div><!-- end media -->
-                </div><!-- end col -->
-            </div><!-- end row -->
+                    </div>
+                </div><!-- end col -->  <!--end product overview-->
 
+
+            </div><!-- end row --><!--Sol Arch end-->
+            
+
+            <!--product overview start-->
+                <br>
+                <div class="row"> 
+                    <div class="col-md-10 col-md-offset-1">
+                        <div class="section-title row text-center">
+                        <h2 style="text-align:left;font-size: 40px">Product Overview</h2><br>
+                                        <img src="images/product2.png" alt="" class="img-responsive">
+                            <!-- end icon-wrapper -->
+                        </div>	
+                        <p class="lead">Acoording to the diagram camera is placed in the height of an average 
+                            person for the handiness of the door lock. IR sensors are kept at a corner of the door to captue the object(person) efectively. 
+                            Other two modules, Fingerprint sensor and RFID reader are placed near the lcd display . So that while enterring the credintails
+                           use can read the lcd display information easily.  </p>
+                    </div>
+                </div>   
+
+            <!--product overview end-->
+
+        </div>
+
+        <!--Sol Arch end-->
+
+        <!--Start hardware-->
+        <div id="hardware" class="container"></div>
+
+        <!--slide show start-->
+
+                        <div class="row"> 
+                            <div class="col-md-10 col-md-offset-1">
+                                <div class="section-title row text-center">
+                                <h3>Hardware design</h3>
+                                
+                                </div>	
+                            </div>
+                        </div>
+
+                        <br>
+                <div class="slideshow-container">
+
+                    <div class="mySlides fade">
+                    <div class="numbertext">1 / 3</div>
+                    <img src="images/Final Circuit.png" style="width:100%">
+                    <div class="text">Circuit Digram</div>
+                    </div>
+                    
+                    <div class="mySlides fade">
+                    <div class="numbertext">2 / 3</div>
+                    <img src="images/pcb.jpg" style="width:100%">
+                    <div class="text"style="color: #f2f2f2;">Full Pcb Design</div>
+                    </div>
+                    
+                    <div class="mySlides fade">
+                    <div class="numbertext">3 / 3</div>
+                    <img src="images/pcb_des.jpg" style="width:100%">
+                    <div class="text"></div>
+                    </div>
+                    
+                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                    
+                    </div>
+                    <br>
+                    
+                    <div style="text-align:center">
+                    <span class="dot" onclick="currentSlide(1)"></span> 
+                    <span class="dot" onclick="currentSlide(2)"></span> 
+                    <span class="dot" onclick="currentSlide(3)"></span> 
+                    </div>
+                    
+                    <script>
+                    var slideIndex = 1;
+                    showSlides(slideIndex);
+                    
+                    function plusSlides(n) {
+                    showSlides(slideIndex += n);
+                    }
+                    
+                    function currentSlide(n) {
+                    showSlides(slideIndex = n);
+                    }
+                    
+                    function showSlides(n) {
+                    var i;
+                    var slides = document.getElementsByClassName("mySlides");
+                    var dots = document.getElementsByClassName("dot");
+                    if (n > slides.length) {slideIndex = 1}    
+                    if (n < 1) {slideIndex = slides.length}
+                    for (i = 0; i < slides.length; i++) {
+                        slides[i].style.display = "none";  
+                    }
+                    for (i = 0; i < dots.length; i++) {
+                        dots[i].className = dots[i].className.replace(" active", "");
+                    }
+                    slides[slideIndex-1].style.display = "block";  
+                    dots[slideIndex-1].className += " active";
+                    }
+                    </script><!--slideshow end-->
+      
+
+        <div class="row"> 
+            <div class="col-md-10 col-md-offset-1">
+                <div class="section-title row text-center">
+                <h2 style="text-align:left;font-size: 35px">Main Hardware components</h2>
+                                
+                    <!-- end icon-wrapper -->
+                </div>	
+                <p class="lead">
+                    <ul class ="lead">
+                        <li>Raspberry Pi 3 Model B</li>
+                        <p>As we are doing Face recognition we have choosen Raspberry Pi module becuase it 
+                            has 1GB RAM to process and Micro SD port for loading operating system and storing data.
+                             Also python libraries like OpenCV can use with it.
+                    There is a CSI camera port in the module for connecting a Raspberry Pi camera. </p>
+                        <li>Raspberry Pi Camera Module</li>
+                        <li>Finger Print Sensor</li>
+                        <li>RFID module</li>
+                        <li>LCD display</li>
+                      </ul>
+                </p>
+            </div>
+        </div>   
+
+    <!--Harware end-->
+        
+
+        
+
+<!--Earlier hardware
            <div class="row"> 
               <div class="col-md-10 col-md-offset-1">
-		<div class="section-title row text-center">
-				<h3>Pcb design</h3>
+		             <div class="section-title row text-center">
+                    <h3>hardware design</h3>
+                   <img src="images/Final Circuit.png" alt="" class="img-responsive">
                                 	 <img src="images/pcb.jpg" alt="" class="img-responsive">
-						<!-- end icon-wrapper -->
-		 </div>	
-	      </div>
-	 </div>   
-		
-	<div class="col-md-6">
-                    <div class="post-media wow fadeIn">
-                        <img src="images/pcb_des.jpg" alt="" class="img-responsive img-rounded">
-                       
-                    </div><!-- end media -->
-                </div><!-- end col -->
-            </div><!-- end row -->	
+
+		             </div>	
+	             </div>
+	        </div>   
+
+         
+                <div class="column2">
+                    <div class="card">
+                        <img src="images/pcb_des.jpg" alt="Mike" style="width:100% ;" >
+                        <div class="container">
+                        <h2>Add title</h2>
+                        </div>
+                    </div>
+                </div>
+            
+                    <div class="column2">
+                            <div class="card">
+                            <pclass="lead" style="color:rgb(50, 114, 114); font-size: 30p">hgvgjhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh
+                            nnhhhhhhhhhhhhhhhhhhhhhhhhhhh
+                            </p>
+                            <div class="container">
+
+                    </div>
+                </div>
+            </div>
+        </div>End hardware-->
+    
+
+
+
+
+<!--old data flow
+        </div>	
 		
             <hr class="invis"> 
 
@@ -214,15 +373,15 @@ Therefore by this project we are developing a smart door lock including the foll
 					
 								<p>Data flowing from all three methods to web server and then updated information will be sent to the display</p>
 					    			 <img src="images/blockDiagram.png" alt="" class="img-responsive">
-						<!-- end icon-wrapper -->
+						
 					</div>
-                </div><!-- end col -->
-            </div><!-- end row -->
+                </div>
+            </div>
 
             <hr class="hr3"> 
 
            
-        </div><!-- end container -->
+        </div> end old data flow -->
 
 
     <div id="software" class="parallax section noover" data-stellar-background-ratio="0.7" style="background-image:url('images/background.jpg');">
@@ -331,9 +490,6 @@ Therefore by this project we are developing a smart door lock including the foll
 		    <img src="images/UI2.png" alt="" class="img-responsive">
             </div><!-- end title -->
 
-               
-		
-
 	<div class="section cl">
 		<div class="container">
 			<div class="row text-left stat-wrap">
@@ -343,29 +499,31 @@ Therefore by this project we are developing a smart door lock including the foll
 		</div><!-- end container -->
 	</div><!-- end section -->
 
+
+<!--start testing-->
     <div id="testing" class="section lb">
         <div class="container">
             <div class="section-title text-center">
-                <h3>Software Testing</h3>
-		<h2>Firebase Security Rules
-                <p class="lead">The Firebase Local Emulator Suite consists of individual service emulators built to accurately mimic the behavior of Firebase services.It enables app to directly connect to these emulators to perform integration testing.Through this we checked whom can access to the data as we set security rules to deny permission for unauthorized access.
-</p><br>
-			<h2>Check UsedID validity</h2>
-                <p class="lead">Always the  IDs stored in the databse are compared with the ID which is taken by the hardware. So it is importatnt confirm that that process is correctly processing if not the unlocking records will be innacurrate.
-</p><br>
-		    <img src="images/test2.png" alt="" class="img-responsive"><br><br>
-			<h2>Data encryption and Decryption function testing</h2>
- <p class="lead">In the database, userID of each employee and the security status of a Admin is considered as most sensitive data stored in the database as userID is directly connected with hardware components which gives the access to the doors and admin privilages are depend on the security status of a admin. So these data is stored in the database after encryption. We have implemented AES encryption decryption functions.
-All the hardware configurations are planned to do in python language and Reactjs is used for implementation of web Application.So tests are done to verify that both python and JavaScript functions give the same result in encryption and decryption process.</p><br>
-		<img src="images/encrypt_test.png" alt="" class="img-responsive"><br>
-		<h2>Test 5 - Time taken for encryption and decryption</h2>
- <p class="lead">Data encryption and decryption may cause the delays in the reliable data transfer to the frontend and hardware components. So we have checked the time taken for that. Actualy   it takes few microseconds. So the effect of delay can be neglegible. Following values may slightly change according to the data we use</p>
-		<p> - for encyption = 0:00:00.000782</p>
-		<p> - for decryption = 0:00:00.000019</p><br>
-		
-<li><a href="https://github.com/cepdnaclk/e16-3yp-smart-door-lock/tree/main/Software%20testing" class="lead">Click here to know more details about software testing</a></li><br>
-		    
-            </div><!-- end title -->
+                            <h3>Software Testing</h3>
+                    <h2>Firebase Security Rules
+                            <p class="lead">The Firebase Local Emulator Suite consists of individual service emulators built to accurately mimic the behavior of Firebase services.It enables app to directly connect to these emulators to perform integration testing.Through this we checked whom can access to the data as we set security rules to deny permission for unauthorized access.
+            </p><br>
+                        <h2>Check UsedID validity</h2>
+                            <p class="lead">Always the  IDs stored in the databse are compared with the ID which is taken by the hardware. So it is importatnt confirm that that process is correctly processing if not the unlocking records will be innacurrate.
+            </p><br>
+                        <img src="images/test2.png" alt="" class="img-responsive"><br><br>
+                        <h2>Data encryption and Decryption function testing</h2>
+            <p class="lead">In the database, userID of each employee and the security status of a Admin is considered as most sensitive data stored in the database as userID is directly connected with hardware components which gives the access to the doors and admin privilages are depend on the security status of a admin. So these data is stored in the database after encryption. We have implemented AES encryption decryption functions.
+            All the hardware configurations are planned to do in python language and Reactjs is used for implementation of web Application.So tests are done to verify that both python and JavaScript functions give the same result in encryption and decryption process.</p><br>
+                    <img src="images/encrypt_test.png" alt="" class="img-responsive"><br>
+                    <h2>Test 5 - Time taken for encryption and decryption</h2>
+            <p class="lead">Data encryption and decryption may cause the delays in the reliable data transfer to the frontend and hardware components. So we have checked the time taken for that. Actualy   it takes few microseconds. So the effect of delay can be neglegible. Following values may slightly change according to the data we use</p>
+                    <p> - for encyption = 0:00:00.000782</p>
+                    <p> - for decryption = 0:00:00.000019</p><br>
+                    
+            <li><a href="https://github.com/cepdnaclk/e16-3yp-smart-door-lock/tree/main/Software%20testing" class="lead">Click here to know more details about software testing</a></li><br>
+                        
+                        </div><!-- end title -->
 
 
             <hr class="invis">
@@ -426,15 +584,62 @@ All the hardware configurations are planned to do in python language and Reactjs
         
         
         </div>
-       
+    
         <!--hardware testing-end-->
     </div><!-- end section -->
+
+
+
+
+    <!--Start how to use-->
+    
+    <body3>
+    <div class="container2">
+        <img src="images/usermanual_BackG.jpg" alt="Notebook" style="width:100%;">
+        <div class="content">
+          <h1   style="color:rgb(237, 241, 241); font-size: 40px">How to use our product</h1>
+          <p class="lead" style="color:rgb(237, 241, 241); font-size: 30p">As we mentioned in the introduction there are several reasons
+             to prove that tradition door 
+              lock systems at the entrance are inefficient. But in this product we have overcome all those problems and give a
+               quick access to the door user while providnig important addtional services such as take access
+                records and giving realtime update about the access using a lcd display</p>
+                
+                <p class="lead" style="color:rgb(238, 248, 101); font-size: 30p">&emsp; &emsp;Register Users</p>
+                <p class="lead" style="color:rgb(237, 241, 241); font-size: 30p">In order to register an user,
+                     administrator should fill the form provided in the website
+                     with uniquely provided userid. Here, the corresponding userid is registered for one specific person. </p>
+
+                <p class="lead" style="color:rgb(238, 248, 101); font-size: 30p">&emsp; &emsp;Access Given</p>
+                <p class="lead" style="color:rgb(237, 241, 241); font-size: 30p">
+                    First contact the RFID card/tag to the RFID reader. Then place the finger on the fingerprint sensor and look at 
+                    the camera to capture a photo of the user.
+                     Then the access will be granted if all there steps are correctly passed by that person. LCD display will
+                      display the information whether access has been given or not. All the accesses will be recorded on the website.
+                </p>
+                <p class="lead" style="color:rgb(238, 248, 101); font-size: 30p">&emsp; &emsp;Identify Unauthorized Aceess</p> 
+                <p class="lead" style="color:rgb(237, 241, 241); font-size: 30p">
+                    If any unauthorized access is detected i.e. using an unregistered card/tag or trying to access more than one person
+                     into the room using one card/tag, access will not be granted and the buzzer will make a loud sound. LCD display
+                      will display the information whether access has been given or not. These accesses will be recorded on the website.
+                </p>
+               
+             
+            
+        </div>
+      </div> 
+    </body3>
+    <!--End how to use-->
+    <!--startWebapppreview-->
+    
+    <!--End app preview-->
 	    
-	    
-<div id="pricing" >
+    <!--start budget-->
+    <br><br>
+    <div id="pricing" >
         <img src="images/budget.png" alt="" class="img-responsive">
 
     </div>
+    <!--End budget-->
 
     <div id="testimonials" class="parallax section db parallax-off" style="background-image:url('uploads/parallax_04.jpg');">
         <div class="container">
@@ -497,9 +702,70 @@ All the hardware configurations are planned to do in python language and Reactjs
                     </div><!-- end clearfix -->
                 </div><!-- end col -->
 
+                <!--start add contributers
+                <h2>Project Contributors</h2>
+                
+                <br>
+                
+                <div class="row">
+                  <div class="column3">
+                    <div class="card2">
+                      <img src="images/budget.png"  style="width:100%" >
+                      <div class="container3">
+                        <h2>Virajani Dharmathilaka</h2>
+                        <p class="title3">E/16/086<br>Virajani Dharmathilaka</p>
+                        
+                        <p> <ul class="footer-links">
+                           <li> <a href="mailto:#">virajanidharmathilaka@gmail.com</a></li>
+                        </ul>
+                        </p>
+
+                      </div>
+                    </div>
+                  </div>
+                
+                  <div class="column3">
+                    <div class="card2">
+                      <img src="images/budget.png" alt="Mike" style="width:100% " >
+                      <div class="container3">
+                        <h2>Chanika Madushanki</h2>
+                        <p class="title3">E/16/223<br>Chanika Madushanki</p>
+            
+                        <p>
+                            <ul class="footer-links">
+                                <li><a href="mailto:#">cmkariyawasam10@gmail.com</a></li>
+                            </ul>
+                        </p>
+
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <div class="column3">
+                    <div class="card2">
+                      <img src="images/budget.png" alt="John" style="width:100% ; ">
+                      <div class="container3">
+                        <h2>Tharushini Jayathilaka</h2>
+                        <p class="title3">E/16/156<br>Tharushini Jayathilaka</p>
+                        
+                        <p><ul class="footer-links">
+                           
+                            <li><a href="mailto:#">tharushinithiwanka@gmail.com</a></li>
+                            
+                        </ul></p>
+
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                end add contributers-->
+
                 
             </div><!-- end row -->
         </div><!-- end container -->
+
+
+
     </footer><!-- end footer -->
 
     <div class="copyrights">
