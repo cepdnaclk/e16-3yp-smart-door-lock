@@ -101,6 +101,7 @@
                         <li><a data-scroll href="#hardware" >Hardware</a></li>
                         <li><a data-scroll href="#software">Software</a></li>
 			<li><a data-scroll href="#testing">Testing</a></li>
+			<li><a data-scroll href="#user">User Experience</a></li>
                         <li><a data-scroll href="#pricing">Budget</a></li>
                         <li><a data-scroll href="#contacts">Contact</a></li>
                     </ul>
@@ -124,7 +125,7 @@
 									<p class="lead" data-animation="animated fadeInLeft">A project of third year students developing a Smart door lock for the entrance </p>
 									 <a data-scroll href="#overviews" class="btn btn-light btn-radius btn-brd effect-1 slide-btn" data-animation="animated fadeInLeft">All Features</a>
 									&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-									<a data-scroll href="#pricing" class="btn btn-light btn-radius btn-brd effect-1 slide-btn" data-animation="animated fadeInRight">View Plans</a>
+									<a data-scroll href="#soln" class="btn btn-light btn-radius btn-brd effect-1 slide-btn" data-animation="animated fadeInRight">View Plans</a>
 								</div>
 							</div>
 						</div><!-- end row -->            
@@ -319,6 +320,112 @@ Therefore by this project we are developing a smart door lock including the foll
         </div>   
 
     <!--Harware end-->
+
+<!--Start slideshow 2--> 
+        
+
+        
+        <h2 style="text-align:left;font-size: 35px">&emsp; &emsp; 3D Model of the product</h2>
+            
+            <div class="container5">
+              <div class="mySlides2">
+                <div class="numbertext">1 / 6</div>
+                <img style=" margin-left: auto;
+                margin-right: auto; width:100% ; height:60%" src="images/alllock.png" >
+              </div>
+            
+              <div class="mySlides2">
+                <div class="numbertext">2 / 6</div>
+                <img style="margin-left: auto;
+                margin-right: auto;width:100% ;height:60%"src="images/frontlock2.png" >
+              </div>
+            
+              <div class="mySlides2">
+                <div class="numbertext">3 / 6</div>
+                <img style=" margin-left: auto;
+                margin-right: auto;width:100% ;height:60%"src="images/insidelock.png">
+              </div>
+                
+              <div class="mySlides2">
+                <div class="numbertext">4 / 6</div>
+                <img style=" margin-left: auto;
+                margin-right: auto;width:100% ;height:60%"src="images/allcamera.png">
+              </div>
+            
+              <div class="mySlides2">
+                <div class="numbertext">5 / 6</div>
+                <img style="margin-left: auto;
+                margin-right: auto; width:100%;height:60%"src="images/sidecamera.png" >
+              </div>
+                
+              <div class="mySlides2">
+                <div class="numbertext">6 / 6</div>
+                <img style=" margin-left: auto;
+                margin-right: auto;width:100%;height:60%"src="images/upcamera.png" >
+              </div>
+                
+              <a class="prev2" onclick="plusSlides2(-1)">❮</a>
+              <a class="next2" onclick="plusSlides2(1)">❯</a>
+            
+              <div class="caption-container">
+                <p id="caption"></p>
+              </div>
+            
+              <div class="row2">
+                <div class="column5">
+                  <img class="demo cursor" src="images/alllock.png" style="width:100%;vertical-align: middle;" onclick="currentSlide2(1)" alt="The Woods">
+                </div>
+                <div class="column5">
+                  <img class="demo cursor" src="images/frontlock2.png" style="width:100%;vertical-align: middle;" onclick="currentSlide2(2)" alt="Cinque Terre">
+                </div>
+                <div class="column5">
+                  <img class="demo cursor" src="images/insidelock.png" style="width:100%;vertical-align: middle;" onclick="currentSlide2(3)" alt="Mountains and fjords">
+                </div>
+                <div class="column5">
+                  <img class="demo cursor" src="images/allcamera.png" style="width:100%;vertical-align: middle;" onclick="currentSlide2(4)" alt="Northern Lights">
+                </div>
+                <div class="column5">
+                  <img class="demo cursor" src="images/sidecamera.png" style="width:100%;vertical-align: middle;" onclick="currentSlide2(5)" alt="Nature and sunrise">
+                </div>    
+                <div class="column5">
+                  <img class="demo cursor" src="images/upcamera.png" style="width:100%;vertical-align: middle;" onclick="currentSlide2(6)" alt="Snowy Mountains">
+                </div>
+              </div>
+            </div>
+            
+            <script>
+            var slideIndex = 1;
+            showSlides2(slideIndex);
+            
+            function plusSlides2(n) {
+              showSlides2(slideIndex += n);
+            }
+            
+            function currentSlide2(n) {
+              showSlides2(slideIndex = n);
+            }
+            
+            function showSlides2(n) {
+              var i;
+              var slides = document.getElementsByClassName("mySlides2");
+              var dots = document.getElementsByClassName("demo2");
+              var captionText = document.getElementById("caption");
+              if (n > slides.length) {slideIndex = 1}
+              if (n < 1) {slideIndex = slides.length}
+              for (i = 0; i < slides.length; i++) {
+                  slides[i].style.display = "none";
+              }
+              for (i = 0; i < dots.length; i++) {
+                  dots[i].className = dots[i].className.replace(" active2", "");
+              }
+              slides[slideIndex-1].style.display = "block";
+              dots[slideIndex-1].className += " active2";
+              captionText.innerHTML = dots[slideIndex-1].alt;
+            }
+            </script>
+                
+        
+        <!--end slideshow 2-->
         
 
         
@@ -593,7 +700,7 @@ Therefore by this project we are developing a smart door lock including the foll
 
     <!--Start how to use-->
     
-    <body3>
+    <div id= "user">
     <div class="container2">
         <img src="images/usermanual_BackG.jpg" alt="Notebook" style="width:100%;">
         <div class="content">
@@ -627,7 +734,7 @@ Therefore by this project we are developing a smart door lock including the foll
             
         </div>
       </div> 
-    </body3>
+</div>
     <!--End how to use-->
     <!--startWebapppreview-->
     
