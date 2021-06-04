@@ -1,0 +1,41 @@
+{
+    "title": "e16-3yp-smart-door-lock",
+    "team": [
+        {
+            "name": "Dharmathilaka A.L.V.H.",
+            "email": "e16086@eng.pdn.ac.lk",
+            "eNumber": "E/16/086",
+            "github_profile":"https://github.com/Virajanidh",
+            "linkedin_profile":"#"
+        },
+        {
+            "name": "Jayathilaka H.A.D.T.T.",
+            "email": "e16156@eng.pdn.ac.lk",
+            "eNumber": "E/16/156",
+            "github_profile":"https://github.com/TharuJayathilaka",
+            "linkedin_profile":"#"
+        },
+        {
+            "name": "Madushanki K.H.H.C",
+            "email": "e16223@eng.pdn.ac.lk",
+            "eNumber": "E/16/223",
+            "github_profile":"https://github.com/chanika10",
+            "linkedin_profile":"#"
+        }
+    ],
+    "supervisors": [
+       {
+            "name": "Dr. Isuru Nawinne",
+            "email": "isurunawinne@eng.pdn.ac.lk",
+            "linkedin_profile":"#",
+            "researchgate_profile":"#"
+        },
+        {
+            "name": "Dr. Ziyan Maraikar ",
+            "email": "ziyanm@eng.pdn.ac.lk",
+            "linkedin_profile":"#",
+            "researchgate_profile":"#"
+        }
+    ],
+    "tags": ["Web", "Embedded Systems","Smart Door Lock"]
+}
